@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Nova+Flat&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Nova+Flat&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poiret+One&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Share+Tech&display=swap');
+
+
+body {
+    background-image: url("Images/background.jpg");
+    display: flex;
+    justify-content: center; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+main {
+    width: 60%;
+    background-color: white;
+    padding: 5%;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    margin-left:40%;
+}
+h1{
+    font-family: "Share Tech", sans-serif;
+    font-size: 55px;
+}
+h2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+h3 {
+    display: inline;
+    text-align: left;
+    font-weight: 550;
+    font-size: 15px;
+}
+hr {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    visibility: hidden;
+}
+h4 {
+    margin-top: 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
+p{
+    font-weight: normal;
+    line-height: 28px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#finalLine{
+    color: black;
+    visibility:unset;
+    margin-top: 5%;
+}
+.marginalInformation{
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 25px;
+}
+#section{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    font-weight: normal;
+}
+#section:hover{
+    opacity: 80%;
+}
+strong {
+    font-weight: 600;
+}
+a{
+    font-weight: 600;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color: rgb(157, 152, 152);
+    text-decoration: none;
+}
+#backButton{
+    display: flex;
+    float: left;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 0.5% 1% 0.5% 1%;
+    width: 100%;
+    margin-top: 5%;
+}
+#backButton:hover{
+    opacity: 50%;
+}
+.newsletter{
+    margin-top: 5%;
+    display: block;
+    font-family: "Red Hat Text", sans-serif;
+    text-align: center;
+}
+
+input{
+    font-size: 15px;
+    width: 40%;
+    padding: 1.5%;
+    background: rgb(236, 226, 226);
+    opacity: 50%;
+    border-width: 0;
+}
+button{
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 20px;
+    padding: 1% 4% 1% 4%;
+    color: white;
+    background-color: #e92b94;
+    border-width: 0;
+}
+button:hover{
+    opacity: 50%;
+}
+
