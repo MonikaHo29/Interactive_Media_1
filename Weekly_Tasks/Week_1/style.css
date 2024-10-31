@@ -106,14 +106,16 @@ button:hover{
 }
 
 #previousLink{
-    display: flex;
-    float: left;
-    text-decoration: none;
     background-color: black;
     color: white;
+    display: flex;
+    float: left;
     padding: 0.5% 1% 0.5% 1%;
     width: 100%;
     margin-top: 5%;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
 }
 #previousLink:hover{
     opacity: 50%;
