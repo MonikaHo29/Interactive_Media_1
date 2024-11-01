@@ -28,11 +28,11 @@ main {
     opacity: 80%;
 }
 h1{
-    font-family: "Share Tech", sans-serif;
+    font-family: "Share Tech", sans-serif;                  /*implementing Google Font*/
     font-size: 55px;
 }
 h2 {
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Red Hat Text", sans-serif;                /*implementing Google Font*/
     font-size: 25px;
     font-weight: lighter;
     letter-spacing: 1px;
@@ -104,7 +104,6 @@ button:hover{
     text-decoration: none;
     font-weight: lighter;
 }
-
 #previousLink{
     background-color: black;
     color: white;
