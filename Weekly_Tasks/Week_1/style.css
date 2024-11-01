@@ -1,5 +1,6 @@
 body {
-    background-image: url("Images/background.jpg");         /*adding background image*/
+    /*adding background image*/
+    background-image: url("https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg?t=st=1730454096~exp=1730457696~hmac=9e57cf27d41893bf08afa44fd3c191f3164ecfb776c81d81f24a93e863e09dd4&w=996");         
     display: flex;
     justify-content: center; 
     margin-top: 0;
