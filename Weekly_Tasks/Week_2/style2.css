@@ -1,0 +1,45 @@
+body {
+    background-color: grey;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+}
+
+#one{                                           
+    background-color: tomato;
+    position: relative;
+    top:40px;
+    left: 30px;  
+}
+
+#two{
+    background-color: greenyellow;
+    position: relative;
+    bottom: 80px;                                       
+    right: 20px;
+}
+
+#three{
+    background-color: blueviolet;
+    position: relative;                                 /*tips: never use bottom, right (line: 20-21) -> use top & left with a negative value*/
+    top: -80px;
+    left: -30px;
+}
+
+#four{
+    background-color: orange;
+    position: absolute;
+}
+
+#five{
+    background-color: pink;
+}
+
+
+/* position property value:
+
+static = default value, stay, object not move
+relative = the element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+absolute 
