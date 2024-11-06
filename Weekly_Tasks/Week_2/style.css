@@ -42,8 +42,8 @@ body{
 #four{
     background-color: orange;
     margin: -100px 40px 30px 20px;                          /*-100px = pull up, margin overlap*/
-    /*padding: -100px 50px 20px 20px;*/                         /* --> no negative padding!*/
-    border: red 15px;
+    /*padding: -100px 50px 20px 20px;*/                     /* --> no negative padding!*/
+    border: red groove 15px;                              /* groove = type of styling the border, others: outset, inset, ridge*/
     border-radius: 20px;
 
 }
@@ -51,6 +51,7 @@ body{
 #five{
     background-color: pink;
     margin: auto;                                           /*auto = put the object in the center, left and right have the same distance*/ 
+    border-radius: 200px;
 }
 
 
@@ -62,3 +63,4 @@ body{
 
 margin = add space outside, 
 padding = add space inside, distance between contant 
+boder = add a 
