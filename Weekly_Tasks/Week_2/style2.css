@@ -31,15 +31,45 @@ body {
 #four{
     background-color: orange;
     position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #five{
     background-color: pink;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
 }
+
+#six{
+    background-color: aqua;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50px;
+    left: 600px;
+}
+
+#seven{
+    background-color: chocolate;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#eight{
+    background-color: crimson;
+    position: fixed;
+}
+
+
 
 
 /* position property value:
 
 static = default value, stay, object not move
 relative = the element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
-absolute 
+absolute = 
+fixed = stay there, its base on the screen so it fixed
+*/
