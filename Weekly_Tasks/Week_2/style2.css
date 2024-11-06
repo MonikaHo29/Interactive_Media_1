@@ -3,7 +3,8 @@ body {
 }
 
 .box {
-    width: 300px;
+    background-color: white !important;
+    width: 300px;           
     height: 200px;
 }
 
@@ -73,3 +74,6 @@ relative = the element is positioned relative to its normal position, so "left:2
 absolute = 
 fixed = stay there, its base on the screen so it fixed
 */
+
+
+/*css = cascading -> overwriting, more infos see Canvas) 
