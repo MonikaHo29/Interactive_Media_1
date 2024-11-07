@@ -7,7 +7,7 @@ main{
     background-color: white;
     margin:auto;
 }
-.group1{
+.group_R1{
     position: absolute;
     top: 60px;
 }
@@ -56,4 +56,22 @@ main{
     top: -140px;
     transform: rotate(-45deg);
     z-index: 1;
+}
+#rectangle_4{
+    width: 120px;
+    height: 300px;
+    background-color: coral;
+    position: relative;
+    top:-260px;
+    left: 360px;
+    z-index: 1;
+}
+#rectangle_5{
+    width: 140px;
+    height: 250px;
+    background-color:cornflowerblue;
+    display: flex;
+    position: relative;
+    top:-600px;
+    left: 400px;
 }
