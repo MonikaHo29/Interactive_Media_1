@@ -59,10 +59,10 @@ main{
 }
 #rectangle_4{
     width: 120px;
-    height: 300px;
+    height: 350px;
     background-color: coral;
     position: relative;
-    top:-260px;
+    top:-280px;
     left: 360px;
     z-index: 1;
 }
@@ -72,6 +72,18 @@ main{
     background-color:cornflowerblue;
     display: flex;
     position: relative;
-    top:-600px;
+    top:-680px;
     left: 400px;
+}
+#circle{
+    width: 500px;
+    height: 500px;
+    background-color: darkgreen;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    top:-750px;
+    left: 250px;
+    z-index: 1;
+    opacity: 20%;
 }
