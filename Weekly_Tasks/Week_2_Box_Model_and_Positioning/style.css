@@ -1,15 +1,7 @@
-body{
-    background-color: black;
-}
 main{
     width: 600px;
     height:720px;
-    background-color: white;
     margin:auto;
-}
-.group_R1{
-    position: absolute;
-    top: 60px;
 }
 #rectangle_1{
     width: 100px;
@@ -21,13 +13,14 @@ main{
     transform: rotate(45deg);
 }
 #rectangle_2{
-    width: 70px;
-    height: 130px;
+    width: 80px;
+    height: 200px;
     background-color: brown;
     position: relative;
-    left: 110px;
-    top: 25px;
+    left: 80px;
+    top: 10px;
     z-index: 1;
+    transform: rotate(45deg);
 }
 #rectangle_3{
     width: 70px;
@@ -49,11 +42,11 @@ main{
 }
 #line_2{
     width: 3px;
-    height: 220px;
+    height: 240px;
     background-color: black;
     position: relative;
     left: 200px;
-    top: -140px;
+    top: -150px;
     transform: rotate(-45deg);
     z-index: 1;
 }
@@ -76,14 +69,46 @@ main{
     left: 400px;
 }
 #circle{
-    width: 500px;
-    height: 500px;
-    background-color: darkgreen;
+    width: 600px;
+    height: 600px;
+    clip-path: ellipse(100% 50% at 50% 50%);
+    background: conic-gradient(darkgreen 0deg 180deg, transparent 90deg 360deg);
+    transform: rotate(180deg);
     display: flex;
     position: relative;
     border-radius: 50%;
-    top:-750px;
-    left: 250px;
-    z-index: 1;
+    top: -1050px;
+    left: 240px;
+    z-index: -0.5;
     opacity: 20%;
+}
+.group_R3{
+    position: absolute;
+    display:inline
+}
+#rectangle_6{
+    width: 140px;
+    height: 180px;
+    background-color: crimson;
+    display: flex;
+    position: relative;
+    top:-450px;
+}
+#rectangle_7{
+    width: 220px;
+    height: 100px;
+    background-color: rgb(29, 158, 74);
+    display: flex;
+    position: relative;
+    top:-600px;
+    left: 80px;
+}
+#rectangle_8{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(44, 29, 158);
+    display: flex;
+    position: relative;
+    top:-600px;
+    left: 340px;
 }
