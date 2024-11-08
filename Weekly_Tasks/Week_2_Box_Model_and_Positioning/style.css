@@ -1,114 +1,56 @@
+body{
+    background-color: black;
+}
 main{
     width: 600px;
-    height:720px;
+    height:800px;
     margin:auto;
+    display: flex;
+    background-color: white;
 }
-#rectangle_1{
-    width: 100px;
-    height: 160px;
+#r1{
+    width: 120px;
+    height: 180px;
     background-color: aqua;
     position: relative;
+    top: 130px;
     left: 120px;
-    top: 50px;
-    transform: rotate(45deg);
+    transform: rotate(55deg);
 }
-#rectangle_2{
+#r2{
     width: 80px;
-    height: 200px;
-    background-color: brown;
-    position: relative;
-    left: 80px;
-    top: 10px;
-    z-index: 1;
-    transform: rotate(45deg);
-}
-#rectangle_3{
-    width: 70px;
-    height: 100px;
+    height: 140px;
     background-color: blueviolet;
     position: relative;
-    left: 150px;
-    top: 5px;
-    transform: rotate(-20deg);
+    top: 250px;
+    left: 10px;
+    transform: rotate(-15deg);
 }
-#line_1{
+#r3{
+    width: 60px;
+    height: 110px;
+    background-color: rgb(43, 226, 89);
+    position: relative;
+    top: 410px;
+    left: -40px;
+    transform: rotate(-15deg);
+}
+#l1{
     width: 3px;
-    height: 180px;
+    height: 200px;
     background-color: black;
     position: relative;
-    left: 130px;
-    top: 20px;
-    transform: rotate(45deg);
+    top: 40px;
+    left: 120px;
+    transform: rotate(55deg);
 }
-#line_2{
+#l2{
     width: 3px;
     height: 240px;
     background-color: black;
     position: relative;
-    left: 200px;
-    top: -150px;
-    transform: rotate(-45deg);
+    top: 50px;
+    left: 210px;
+    transform: rotate(-35deg);
     z-index: 1;
-}
-#rectangle_4{
-    width: 120px;
-    height: 350px;
-    background-color: coral;
-    position: relative;
-    top:-280px;
-    left: 360px;
-    z-index: 1;
-}
-#rectangle_5{
-    width: 140px;
-    height: 250px;
-    background-color:cornflowerblue;
-    display: flex;
-    position: relative;
-    top:-680px;
-    left: 400px;
-}
-#circle{
-    width: 600px;
-    height: 600px;
-    clip-path: ellipse(100% 50% at 50% 50%);
-    background: conic-gradient(darkgreen 0deg 180deg, transparent 90deg 360deg);
-    transform: rotate(180deg);
-    display: flex;
-    position: relative;
-    border-radius: 50%;
-    top: -1050px;
-    left: 240px;
-    z-index: -0.5;
-    opacity: 20%;
-}
-.group_R3{
-    position: absolute;
-    display:inline
-}
-#rectangle_6{
-    width: 140px;
-    height: 180px;
-    background-color: crimson;
-    display: flex;
-    position: relative;
-    top:-450px;
-}
-#rectangle_7{
-    width: 220px;
-    height: 100px;
-    background-color: rgb(29, 158, 74);
-    display: flex;
-    position: relative;
-    top:-600px;
-    left: 80px;
-}
-#rectangle_8{
-    width: 200px;
-    height: 30px;
-    background-color: rgb(44, 29, 158);
-    display: flex;
-    position: relative;
-    top:-600px;
-    left: 340px;
 }
