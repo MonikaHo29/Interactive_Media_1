@@ -11,6 +11,25 @@ main {
 .group1 {
   display: block;
 }
+#l1 {
+  width: 1.5px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  top: 5px;
+  left: 140px;
+  transform: rotate(55deg);
+}
+#l2 {
+  width: 3px;
+  height: 240px;
+  background-color: black;
+  position: relative;
+  top: -170px;
+  left: 200px;
+  transform: rotate(-35deg);
+  z-index: 1;
+}
 #r1 {
   width: 120px;
   height: 180px;
@@ -37,25 +56,6 @@ main {
   top: -340px;
   left: 170px;
   transform: rotate(-12deg);
-}
-#l1 {
-  width: 1.5px;
-  height: 200px;
-  background-color: black;
-  position: relative;
-  top: 5px;
-  left: 140px;
-  transform: rotate(55deg);
-}
-#l2 {
-  width: 3px;
-  height: 240px;
-  background-color: black;
-  position: relative;
-  top: -170px;
-  left: 200px;
-  transform: rotate(-35deg);
-  z-index: 1;
 }
 .group2 {
   display: flex;
@@ -158,12 +158,11 @@ main {
   height: 200px;
   background-color: black;
   position: relative;
-  display: flex;
+  display: none;
   top: 500px;
   left: -1260px;
   transform: rotate(45deg);
   z-index: 1;
-  display: none;
 }
 #l5 {
   width: 1.5px;
