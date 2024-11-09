@@ -1,56 +1,109 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-main{
-    width: 600px;
-    height:800px;
-    margin:auto;
-    display: flex;
-    background-color: white;
+main {
+  width: 600px;
+  height: 720px;
+  margin: auto;
+  display: flex;
+  background-color: white;
 }
-#r1{
-    width: 120px;
-    height: 180px;
-    background-color: aqua;
-    position: relative;
-    top: 130px;
-    left: 120px;
-    transform: rotate(55deg);
+.group1 {
+  display: block;
 }
-#r2{
-    width: 80px;
-    height: 140px;
-    background-color: blueviolet;
-    position: relative;
-    top: 250px;
-    left: 10px;
-    transform: rotate(-15deg);
+#r1 {
+  width: 120px;
+  height: 180px;
+  background-color: aqua;
+  position: relative;
+  top: 110px;
+  left: 110px;
+  transform: rotate(55deg);
 }
-#r3{
-    width: 60px;
-    height: 110px;
-    background-color: rgb(43, 226, 89);
-    position: relative;
-    top: 410px;
-    left: -40px;
-    transform: rotate(-15deg);
+#r2 {
+  width: 80px;
+  height: 120px;
+  background-color: blueviolet;
+  position: relative;
+  top: 80px;
+  left: 100px;
+  transform: rotate(-12deg);
 }
-#l1{
-    width: 3px;
-    height: 200px;
-    background-color: black;
-    position: relative;
-    top: 40px;
-    left: 120px;
-    transform: rotate(55deg);
+#r3 {
+  width: 60px;
+  height: 80px;
+  background-color: rgb(43, 226, 89);
+  position: relative;
+  top: 100px;
+  left: 100px;
+  transform: rotate(-12deg);
 }
-#l2{
-    width: 3px;
-    height: 240px;
-    background-color: black;
-    position: relative;
-    top: 50px;
-    left: 210px;
-    transform: rotate(-35deg);
-    z-index: 1;
+#l1 {
+  width: 1.5px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  top: 10px;
+  left: 140px;
+  transform: rotate(55deg);
+}
+#l2 {
+  width: 3px;
+  height: 240px;
+  background-color: black;
+  position: relative;
+  top: 30px;
+  left: 200px;
+  transform: rotate(-35deg);
+  z-index: 1;
+}
+.group2 {
+  display: flex;
+}
+#r4 {
+  width: 140px;
+  height: 380px;
+  background-color: brown;
+  position: relative;
+  top: 100px;
+  left: 60px;
+  z-index: 1;
+}
+#r5 {
+  width: 140px;
+  height: 250px;
+  background-color: rgb(65, 42, 165);
+  position: relative;
+  top: 50px;
+  left: -20px;
+}
+#circle {
+  width: 160px;
+  height: 160px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  top: 280px;
+  left: 150px;
+  z-index: 2;
+}
+#r6 {
+  width: 15px;
+  height: 170px;
+  background-color: rgb(84, 139, 67);
+  position: relative;
+  top: 350px;
+  left: -60px;
+}
+#r7 {
+  width: 15px;
+  height: 100px;
+  background-color: rgb(139, 117, 67);
+  position: relative;
+  top: 460px;
+  left: -160px;
+  transform: rotate(90deg);
+}
+#r8{
+    
 }
