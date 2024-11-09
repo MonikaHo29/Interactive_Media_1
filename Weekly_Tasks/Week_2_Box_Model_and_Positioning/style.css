@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: black
 }
 main {
   width: 600px;
@@ -7,6 +7,7 @@ main {
   margin: auto;
   display: flex;
   background-color: #7ba1c4;
+  overflow: hidden;
 }
 .group1 {
   display: block;                           /*display: block*/
@@ -65,7 +66,7 @@ main {
   height: 380px;
   background-color: #e88b38;
   position: relative;
-  top: 80px;
+  top: 70px;
   left: 60px;
   z-index: 1;
 }
@@ -74,7 +75,7 @@ main {
   height: 250px;
   background-color: #49244b;
   position: relative;
-  top: 30px;
+  top: 25px;
   left: -20px;
   z-index: -0.5;                            /*z-index: -0.5*/
 }
@@ -84,7 +85,7 @@ main {
   background-color: white;
   border-radius: 50%;
   position: relative;
-  top: 260px;
+  top: 250px;
   left: 120px;
   z-index: 2;                               /*z-index: 2*/
   opacity: 45%;
@@ -96,13 +97,14 @@ main {
   position: absolute;                       /*position: absolute*/
   top: 355px;
   left: 960px;
+  z-index: 1;  
 }
 #r7 {
   width: 15px;
   height: 160px;
   background-color: #49244b;
   position: relative;
-  top: 420px;
+  top: 410px;
   left: -190px;
   transform: rotate(90deg);         
 }
@@ -110,12 +112,12 @@ main {
   display: inline-flex;                     /*display: inline-flex*/
 }
 #r8 {
-  width: 120px;
-  height: 200px;
+  width: 140px;
+  height: 220px;
   background-color: white;
   position: relative;
-  top: 480px;
-  left: -575px;
+  top: 470px;
+  left: -595px;
   opacity: 45%;
 }
 #r9 {
@@ -124,7 +126,7 @@ main {
   background-color: #1571bc;
   position: relative;
   top: 520px;
-  left: -630px;
+  left: -640px;
 }
 #r10 {
   width: 160px;
@@ -140,7 +142,7 @@ main {
   height: 30px;
   background-color: #49244b;
   position: relative;
-  top: 650px;
+  top: 660px;
   left: -920px;
 }
 #l3 {
@@ -204,7 +206,7 @@ main {
   background-color: white;
   position: absolute;                       /*position: absolute*/
   display: flex;
-  top: 390px;
-  left: 990px;
+  top: 400px;
+  left: 1000px;
   opacity: 45%;
 }
