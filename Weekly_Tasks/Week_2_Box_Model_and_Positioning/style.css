@@ -16,7 +16,7 @@ main {
   height: 180px;
   background-color: aqua;
   position: relative;
-  top: 110px;
+  top: -330px;
   left: 110px;
   transform: rotate(55deg);
 }
@@ -25,7 +25,7 @@ main {
   height: 120px;
   background-color: blueviolet;
   position: relative;
-  top: 80px;
+  top: -350px;
   left: 100px;
   transform: rotate(-12deg);
 }
@@ -34,8 +34,8 @@ main {
   height: 80px;
   background-color: rgb(43, 226, 89);
   position: relative;
-  top: 100px;
-  left: 100px;
+  top: -330px;
+  left: 170px;
   transform: rotate(-12deg);
 }
 #l1 {
@@ -43,7 +43,7 @@ main {
   height: 200px;
   background-color: black;
   position: relative;
-  top: 10px;
+  top: 5px;
   left: 140px;
   transform: rotate(55deg);
 }
@@ -52,7 +52,7 @@ main {
   height: 240px;
   background-color: black;
   position: relative;
-  top: 30px;
+  top: -170px;
   left: 200px;
   transform: rotate(-35deg);
   z-index: 1;
@@ -65,7 +65,7 @@ main {
   height: 380px;
   background-color: brown;
   position: relative;
-  top: 100px;
+  top: 80px;
   left: 60px;
   z-index: 1;
 }
@@ -74,7 +74,7 @@ main {
   height: 250px;
   background-color: rgb(65, 42, 165);
   position: relative;
-  top: 50px;
+  top: 30px;
   left: -20px;
 }
 #circle {
@@ -83,7 +83,7 @@ main {
   background-color: red;
   border-radius: 50%;
   position: relative;
-  top: 280px;
+  top: 260px;
   left: 150px;
   z-index: 2;
 }
@@ -104,6 +104,105 @@ main {
   left: -160px;
   transform: rotate(90deg);
 }
-#r8{
-    
+.group3{
+    display: inline-flex;
 }
+#r8{
+    width: 120px;
+    height: 200px;
+    background-color: cornflowerblue;
+    position: relative;
+    top: 480px;
+    left: -590px;
+}
+#r9{
+    width: 220px;
+    height: 100px;
+    background-color: rgb(196, 100, 237);
+    position: relative;
+    top: 520px;
+    left: -640px;
+}
+#r10{
+    width: 160px;
+    height: 80px;
+    background-color: rgb(100, 237, 121);
+    position: relative;
+    top: 560px;
+    left: -600px;
+    z-index: 1;
+}
+#r11{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(210, 143, 35);
+    position: relative;
+    top: 650px;
+    left: -950px;
+}
+#l3{
+    width: 1.5px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    top: 510px;
+    left: -1260px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+#l4{
+    width: 1.5px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    top: 500px;
+    left: -1260px;
+    transform: rotate(45deg);
+    z-index: 1;
+    display: none;
+}
+#l5{
+    width: 1.5px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    top: 520px;
+    left: -1200px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+#l6{
+    width: 1.5px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    top: 520px;
+    left: -1260px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+#l7{
+    width: 1.5px;
+    height: 180px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    top: 500px;
+    left: -1200px;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+#l8{
+    width: 25px;
+    height: 300px;
+    background-color:rgb(201, 74, 74);
+    position: relative;
+    display: flex;
+    top: 380px;
+    left: -820px;
+}
+
