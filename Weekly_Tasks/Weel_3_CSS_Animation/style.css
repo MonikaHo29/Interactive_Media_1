@@ -19,8 +19,13 @@ main {
   position: relative;
   top: 5px;
   left: 140px;
-  transform: rotate(55deg);       
-}          
+  transform: rotate(55deg);
+  transition: width backgroundcolor 0.1s;
+}
+#l1:hover{
+  width: 5px;
+  background-color: #e88b38;
+} 
 #l2 {
   width: 3px;
   height: 240px;
@@ -136,6 +141,10 @@ main {
   top: 560px;
   left: -600px;
   z-index: 1;
+  transition: width 2s;
+}
+.group3 #r10:hover{
+  width: 240px;
 }
 #r11 {
   width: 250px;
