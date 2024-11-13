@@ -1,0 +1,116 @@
+body{
+    background-color: #DDD;
+}
+#object {
+    /*basic styling*/
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;                                                          /* position: relative = use for animation to move objects */       
+
+    /* ANIMATION PROPERTIES */
+    /* MUST HAVE ========== */
+    /* give animation a name for later specification */
+    animation-name: animating-object;
+    /* how long is the animation */
+    animation-duration: 2s;
+    /* how many times the animation happen */
+    animation-iteration-count: 10;                                               /* animation-iteration-count: infinite = endless times*/ 
+    
+    /* OPTIONAL =========== */
+    /* how long is the waiting time before the animation happen */
+    animation-delay: 3s;
+    /* what is the direction of the animation */
+    animation-direction: alternate;                                               /* animation-direction: reverse = to -> from (backwards) */                                      
+    /* how it will animate based on animation curve */
+    animation-timing-function: linear;
+
+    /* TRANSITION PROPERTIES ======================= */
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+
+}
+#object:hover{
+    /* pause the animation */
+
+    animation-play-state: paused;
+
+    /* visual change on hover */
+    border-radius: 0;
+    transform: rotate(45deg) scale(1.5,1.5);
+    opacity: 0.5;
+}
+
+
+h1 a:link {
+    color: red;
+    transition: 1s;
+    transition-timing-function: ease-in;
+}
+h1 a:visited { color: magenta; }
+h1 a:hover { 
+    color: blue; 
+}
+h1 a:active { color: green; }
+
+
+/* setting two keyframes, between from and to --> animation will showing) */
+@keyframes animating-object {
+
+    /*
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+    */
+
+    /* setting keyframes with percentage to count from 0% to 100%, e.g keyframes setting makes the object move slower at the beginning now */
+    0% {
+        background-color: blueviolet;
+        top: 0;
+        left: 0
+    }
+    10%{
+        background-color: chocolate;
+        top: 0;
+        left: 500px;
+    }
+    20%{
+        background-color: darkgreen;
+        top: 500px;
+        left: 500px;
+    }
+    30%{
+        background-color: darkred;
+        top: 500px;
+        left: 0px;
+    }
+    100%{
+        background-color:blanchedalmond;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+
+/* ERRORS & DEBUGGING ======================= */
+/* SYNTAX = Misspelled code or missing elements in syntax, e.g missing semicolon, missing closing bracket, etc., can cause the code to not work.
+/* SEMANTICS = Code or structure that just doesn't make sense (to others).
+/* STYLING = When styles don’t apply as expected.
+/* SELECTION = Failing to select elements to apply styles.
+/* CASCADING = Unintentionally having styles overriding others. 
+/* LINKING = Missing connection between HTML and CSS (and later, JS), misspelled linking, giving file wrong name, etc.
+*/
+
+/* TIPS ======================= */
+/* 1. Use the browser's developer tools to inspect the code and see what's happening.
+    --> INSPECTOR = Check the HTML structure and CSS styles. Change the styles in the browser to see what happens. Didn't influence the code in VS. = developer tools, VERY HELPFUL!
+/* 2. Use the browser's console to see if there are any errors.
+*/
+
+
