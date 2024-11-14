@@ -28,12 +28,12 @@ main {
   z-index: 1;   
   transition: 0.5s;                            
 }
-#l2:active{
-  background-color: #1571bc;
+#l2:active{                                                    /* #l2:active -> when the object is clicked */
+  width: 10px;
   height: 260px;
-  width: 6px;
+  background-color: #1571bc;
   left: 260px;
-  z-index: 3;
+  transform: rotate(35deg);
 }
 #r1 {
   width: 120px;
@@ -45,11 +45,11 @@ main {
   transform: rotate(55deg);
   transition: 0.5s;    
 }
-#r1:hover {
-  background-color: #e88b38;
-  width: 100px;
-  height: 160px;     
-  transition-timing-function: ease-in-out;
+#r1:hover {                                                    /* #r1:hover -> Activated when a user moves the mouse over an element. */      
+  background-color: #e88b38;  
+  width: 100px;                                                     
+  height: 160px;  
+  transition-timing-function: ease-in-out;                     /* transition-timing-function -> Specifies the speed curve of the transition effect */
 }
 #r2 {
   width: 80px;
@@ -60,13 +60,13 @@ main {
   left: 100px;
   transform: rotate(-12deg);
   transition: 0.5s;
-  transition-duration: 2s;
+  transition-duration: 2s;                                     /* transition-duration -> How long is the transation */  
 }
 #r2:active {
   background-color: #1571bc;
   width: 200px;
   height: 160px;     
-  mix-blend-mode: difference;
+  mix-blend-mode: difference;                                  /* mix-blend-mode = difference -> Subtracts the top layer from the bottom layer, resulting in a higher contrast (negative-effect) */
 }
 #r3 {
   width: 60px;
@@ -83,19 +83,19 @@ main {
   animation-iteration-count: infinite;
   animation-direction: alternate;    
 }
-@keyframes rotate-rectangle {
+@keyframes rotate-rectangle {                                          
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg);                                   /* transform: rotate(0deg) -> object not rotate */              
   }
-  100% {
-    transform: rotate(360deg);
+  100% {                                                      
+    transform: rotate(360deg);                                 /* transform: rotate(360deg) -> object rotate 360 degrees */             
   }
 }
 #r3:hover {
   background-color: #e88b38;
   width: 40px;
   height: 60px;     
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;                   
 }
 #r4 {
   width: 140px;
@@ -115,15 +115,15 @@ main {
   left: 890px;
   z-index: -0.5;
   transition: 0.5s;
-  transition-property: width, height;                         
+  transition-property: width, height;                          /* transition-property -> Specifies the name of the CSS property the transition effect is for */                     
 }
 #r5:hover {
+  background-color: #e7c775;
   width: 160px;
   height: 270px;
-  background-color: #e7c775;
   transition-timing-function: ease-in-out;
-  mix-blend-mode: difference;
-  z-index: 5;
+  mix-blend-mode: difference;                                  /* mix-blend-mode = difference -> Negative-effect */
+  z-index: 2;
 }
 #circle {
   width: 180px;
@@ -140,11 +140,11 @@ main {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  box-shadow: 6px 6px 5px rgb(106, 109, 110);
+  box-shadow: 6px 6px 5px rgb(106, 109, 110);               /* box-shadow -> Adds shadow to the object */
 }
-@keyframes animating-circle {
+@keyframes animating-circle {                                 /* @keyframes animating-circle -> enlarges the circle */
   0% {
-    transform: translate(-25%, -25%) scale(1);
+    transform: translate(-25%, -25%) scale(1);                /* transform: translate(-25%, -25%) scale(1) -> Circle enlarges from the centre */
     width: 300px;
     height: 300px;
     box-shadow: none;
@@ -155,7 +155,7 @@ main {
   }
 }
 #circle:active{
-  animation-play-state: paused;
+  animation-play-state: paused;                               /* animation-play-state: paused -> Pauses the animation */               
 }
 #r6 {
   width: 15px;
@@ -166,16 +166,16 @@ main {
   left: 970px;
   z-index: 1;
   animation: move1 3s;
-  animation-fill-mode: forwards;  
+  animation-fill-mode: forwards;                              /* animation-fill-mode: forwards -> The element will retain the style values that is set by the last keyframe */
 }
-@keyframes move1 {
+@keyframes move1 {                                            /* @keyframes move1 -> Moves the object to define position */
   0% {
     top: 355px;
   }
   100% {
+    background-color: #e88b38;
     top: 495px;
     z-index: 5;
-    background-color: #e88b38;
   }
 }
 #r7 {
@@ -194,8 +194,8 @@ main {
     left: 865px;
   }
   100% {
-    left: 945px;
     background-color: #1571bc;
+    left: 945px;
   }
 }
 #r8 {
@@ -213,8 +213,8 @@ main {
   width: 160px;
   height: 240px;
   opacity: 100%;
-  filter: grayscale(20%);
-  mix-blend-mode: luminosity;
+  filter: grayscale(20%);                                   /* filter: grayscale(20%) -> Converts the object to grayscale */
+  mix-blend-mode: luminosity;                               /* mix-blend-mode: luminosity -> The luminosity value of the top layer is used to determine the resulting color */
   transition-delay: 0.5s;
 }
 #r9 {
@@ -227,8 +227,8 @@ main {
   transition: 0.5s;
 }
 #r9:active{
+  background-image: linear-gradient(to right, #1571bc, #e7c775);      /* background-image: linear-gradient -> Creates a linear gradient */
   width: 280px;
-  background-image: linear-gradient(to right, #1571bc, #e7c775);
 }
 #r10 {
   width: 160px;
@@ -244,8 +244,8 @@ main {
 #r10:active{
   width: 200px;
   height: 100px;
-  filter: blur(5px);
-  mix-blend-mode: darken;
+  filter: blur(5px);                                         /* filter: blur(5px) -> Adds a blur effect to the object */
+  mix-blend-mode: darken;                                    /* mix-blend-mode: darken -> The color of the top layer is blended with the color of the bottom layer to produce a darker color */
 }
 #r11 {
   width: 250px;
@@ -255,9 +255,9 @@ main {
   top: 660px;
   left: 660px;
   animation: move3 3s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;                                /* animation-fill-mode: both -> The element will retain the style values that is set by the first keyframe */
 }
-@keyframes move3 {
+@keyframes move3 {                                                        
   0% {
     left: 660px;
   }
@@ -331,7 +331,7 @@ main {
   left: 1005px;
   opacity: 45%;
   animation: move4 3s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;    
 }
 @keyframes move4 {
   0% {
