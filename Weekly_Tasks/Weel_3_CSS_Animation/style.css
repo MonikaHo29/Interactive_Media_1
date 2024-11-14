@@ -10,7 +10,7 @@ main {
   overflow: hidden;
 }
 .group1 {
-  display: block;                           
+  display: block;                           /*display: block*/
 }
 #l1 {
   width: 1.5px;
@@ -19,13 +19,8 @@ main {
   position: relative;
   top: 5px;
   left: 140px;
-  transform: rotate(55deg);
-  transition: width backgroundcolor 0.1s;
+  transform: rotate(55deg);                 /*transform: rotate(55deg)*/
 }
-#l1:hover{
-  width: 5px;
-  background-color: #e88b38;
-} 
 #l2 {
   width: 3px;
   height: 240px;
@@ -34,7 +29,7 @@ main {
   top: -170px;
   left: 200px;
   transform: rotate(-35deg);
-  z-index: 1;                               
+  z-index: 1;                               /*z-index: 1*/
 }
 #r1 {
   width: 120px;
@@ -61,10 +56,10 @@ main {
   position: relative;
   top: -340px;
   left: 170px;
-  transform: rotate(-12deg);               
+  transform: rotate(-12deg);                /*transform: rotate(-12deg)*/
 }
 .group2 {
-  display: flex;                           
+  display: flex;                            /*display: flex*/
 }
 #r4 {
   width: 140px;
@@ -82,7 +77,7 @@ main {
   position: relative;
   top: 25px;
   left: -20px;
-  z-index: -0.5;                            
+  z-index: -0.5;                            /*z-index: -0.5*/
 }
 #circle {
   width: 180px;
@@ -92,14 +87,14 @@ main {
   position: relative;
   top: 250px;
   left: 120px;
-  z-index: 2;                               
+  z-index: 2;                               /*z-index: 2*/
   opacity: 45%;
 }
 #r6 {
   width: 15px;
   height: 170px;
   background-color: #1571bc;
-  position: absolute;                       
+  position: absolute;                       /*position: absolute*/
   top: 355px;
   left: 960px;
   z-index: 1;  
@@ -114,7 +109,7 @@ main {
   transform: rotate(90deg);         
 }
 .group3 {
-  display: inline-flex;                     
+  display: inline-flex;                     /*display: inline-flex*/
 }
 #r8 {
   width: 140px;
@@ -141,10 +136,6 @@ main {
   top: 560px;
   left: -600px;
   z-index: 1;
-  transition: width 2s;
-}
-.group3 #r10:hover{
-  width: 240px;
 }
 #r11 {
   width: 250px;
@@ -170,7 +161,7 @@ main {
   height: 200px;
   background-color: black;
   position: relative;
-  display: none;                            
+  display: none;                            /*display: none*/
   top: 500px;
   left: -1260px;
   transform: rotate(45deg);
@@ -195,7 +186,7 @@ main {
   display: flex;
   top: 520px;
   left: -1260px;
-  transform: rotate(-45deg);                 
+  transform: rotate(-45deg);                 /*transform: rotate(-45deg)*/
   z-index: 1;
 }
 #l7 {
@@ -213,7 +204,7 @@ main {
   width: 25px;
   height: 300px;
   background-color: white;
-  position: absolute;                       
+  position: absolute;                       /*position: absolute*/
   display: flex;
   top: 400px;
   left: 1000px;
