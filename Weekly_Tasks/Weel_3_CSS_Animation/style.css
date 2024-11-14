@@ -5,12 +5,8 @@ main {
   width: 600px;
   height: 720px;
   margin: auto;
-  display: flex;
   background-color: #78a5d0;
   overflow: hidden;
-}
-.group1 {
-  display: block;                           /*display: block*/
 }
 #l1 {
   width: 1.5px;
@@ -19,7 +15,7 @@ main {
   position: relative;
   top: 5px;
   left: 140px;
-  transform: rotate(55deg);                 /*transform: rotate(55deg)*/
+  transform: rotate(55deg);                 
 }
 #l2 {
   width: 3px;
@@ -29,7 +25,7 @@ main {
   top: -170px;
   left: 200px;
   transform: rotate(-35deg);
-  z-index: 1;                               /*z-index: 1*/
+  z-index: 1;                               
 }
 #r1 {
   width: 120px;
@@ -56,103 +52,97 @@ main {
   position: relative;
   top: -340px;
   left: 170px;
-  transform: rotate(-12deg);                /*transform: rotate(-12deg)*/
-}
-.group2 {
-  display: flex;                            /*display: flex*/
+  transform: rotate(-12deg);                
 }
 #r4 {
   width: 140px;
   height: 380px;
   background-color: #e88b38;
-  position: relative;
-  top: 70px;
-  left: 60px;
+  position: absolute;
+  top: 80px;
+  left: 840px;
   z-index: 1;
 }
 #r5 {
   width: 140px;
   height: 250px;
   background-color: #49244b;
-  position: relative;
-  top: 25px;
-  left: -20px;
-  z-index: -0.5;                            /*z-index: -0.5*/
+  position: absolute;
+  top: 40px;
+  left: 890px;
+  z-index: -0.5;                            
 }
 #circle {
   width: 180px;
   height: 180px;
   background-color: white;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   top: 250px;
-  left: 120px;
-  z-index: 2;                               /*z-index: 2*/
+  left: 725px;
+  z-index: 2;                               
   opacity: 45%;
 }
 #r6 {
   width: 15px;
   height: 170px;
   background-color: #1571bc;
-  position: absolute;                       /*position: absolute*/
+  position: absolute;                       
   top: 355px;
-  left: 960px;
+  left: 970px;
   z-index: 1;  
 }
 #r7 {
   width: 15px;
   height: 160px;
   background-color: #49244b;
-  position: relative;
+  position: absolute;
   top: 410px;
-  left: -190px;
+  left: 865px;
   transform: rotate(90deg);         
-}
-.group3 {
-  display: inline-flex;                     /*display: inline-flex*/
 }
 #r8 {
   width: 140px;
   height: 220px;
   background-color: white;
-  position: relative;
+  position: absolute;
   top: 470px;
-  left: -595px;
+  left: 468px;
   opacity: 45%;
 }
 #r9 {
   width: 220px;
   height: 100px;
   background-color: #1571bc;
-  position: relative;
+  position: absolute;
   top: 520px;
-  left: -640px;
+  left: 560px;
 }
 #r10 {
   width: 160px;
   height: 80px;
   background-color: #e7c775;
-  position: relative;
+  position: absolute;
   top: 560px;
-  left: -600px;
+  left: 820px;
   z-index: 1;
 }
 #r11 {
   width: 250px;
   height: 30px;
   background-color: #49244b;
-  position: relative;
+  position: absolute;
   top: 660px;
-  left: -920px;
+  left: 660px;
 }
 #l3 {
   width: 1.5px;
   height: 150px;
   background-color: black;
-  position: relative;
+  position: absolute;
   display: flex;
   top: 510px;
-  left: -1260px;
+  left: 570px;
   transform: rotate(45deg);
   z-index: 1;
 }
@@ -160,10 +150,10 @@ main {
   width: 1.5px;
   height: 200px;
   background-color: black;
-  position: relative;
-  display: none;                            /*display: none*/
+  position: absolute;
+  display: none;                           
   top: 500px;
-  left: -1260px;
+  left: 580px;
   transform: rotate(45deg);
   z-index: 1;
 }
@@ -171,10 +161,10 @@ main {
   width: 1.5px;
   height: 200px;
   background-color: black;
-  position: relative;
+  position: absolute;
   display: flex;
   top: 520px;
-  left: -1200px;
+  left: 640px;
   transform: rotate(45deg);
   z-index: 1;
 }
@@ -182,21 +172,21 @@ main {
   width: 1.5px;
   height: 180px;
   background-color: black;
-  position: relative;
+  position: absolute;
   display: flex;
-  top: 520px;
-  left: -1260px;
-  transform: rotate(-45deg);                 /*transform: rotate(-45deg)*/
+  top: 500px;
+  left: 640px;
+  transform: rotate(-45deg);                
   z-index: 1;
 }
 #l7 {
   width: 1.5px;
   height: 180px;
   background-color: black;
-  position: relative;
+  position: absolute;
   display: flex;
-  top: 500px;
-  left: -1200px;
+  top: 520px;
+  left: 570px;
   transform: rotate(-45deg);
   z-index: 1;
 }
@@ -204,9 +194,9 @@ main {
   width: 25px;
   height: 300px;
   background-color: white;
-  position: absolute;                       /*position: absolute*/
+  position: absolute;                       
   display: flex;
   top: 400px;
-  left: 1000px;
+  left: 1005px;
   opacity: 45%;
 }
