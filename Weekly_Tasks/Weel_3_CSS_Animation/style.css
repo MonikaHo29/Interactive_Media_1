@@ -15,7 +15,7 @@ main {
   position: relative;
   top: 5px;
   left: 140px;
-  transform: rotate(55deg);                 
+  transform: rotate(55deg);                
 }
 #l2 {
   width: 3px;
@@ -25,7 +25,15 @@ main {
   top: -170px;
   left: 200px;
   transform: rotate(-35deg);
-  z-index: 1;                               
+  z-index: 1;   
+  transition: 0.5s;                            
+}
+#l2:active{
+  background-color: #1571bc;
+  height: 260px;
+  width: 6px;
+  left: 260px;
+  z-index: 3;
 }
 #r1 {
   width: 120px;
@@ -35,6 +43,13 @@ main {
   top: -330px;
   left: 110px;
   transform: rotate(55deg);
+  transition: 0.5s;    
+}
+#r1:hover {
+  background-color: #e88b38;
+  width: 100px;
+  height: 160px;     
+  transition-timing-function: ease-in-out;
 }
 #r2 {
   width: 80px;
@@ -44,6 +59,14 @@ main {
   top: -350px;
   left: 100px;
   transform: rotate(-12deg);
+  transition: 0.5s;
+  transition-duration: 2s;
+}
+#r2:active {
+  background-color: #1571bc;
+  width: 200px;
+  height: 160px;     
+  mix-blend-mode: difference;
 }
 #r3 {
   width: 60px;
@@ -52,7 +75,27 @@ main {
   position: relative;
   top: -340px;
   left: 170px;
-  transform: rotate(-12deg);                
+  transform: rotate(-12deg); 
+  transition: 0.5s;   
+  animation-name: rotate-rectangle;   
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;    
+}
+@keyframes rotate-rectangle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#r3:hover {
+  background-color: #e88b38;
+  width: 40px;
+  height: 60px;     
+  transition-timing-function: ease-in-out;
 }
 #r4 {
   width: 140px;
@@ -70,7 +113,17 @@ main {
   position: absolute;
   top: 40px;
   left: 890px;
-  z-index: -0.5;                            
+  z-index: -0.5;
+  transition: 0.5s;
+  transition-property: width, height;                         
+}
+#r5:hover {
+  width: 160px;
+  height: 270px;
+  background-color: #e7c775;
+  transition-timing-function: ease-in-out;
+  mix-blend-mode: difference;
+  z-index: 5;
 }
 #circle {
   width: 180px;
@@ -82,6 +135,27 @@ main {
   left: 725px;
   z-index: 2;                               
   opacity: 45%;
+  animation-name: animating-circle;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  box-shadow: 6px 6px 5px rgb(106, 109, 110);
+}
+@keyframes animating-circle {
+  0% {
+    transform: translate(-25%, -25%) scale(1);
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+  }
+  100% {
+    width: 180px;
+    height: 180px;
+  }
+}
+#circle:active{
+  animation-play-state: paused;
 }
 #r6 {
   width: 15px;
@@ -90,7 +164,19 @@ main {
   position: absolute;                       
   top: 355px;
   left: 970px;
-  z-index: 1;  
+  z-index: 1;
+  animation: move1 3s;
+  animation-fill-mode: forwards;  
+}
+@keyframes move1 {
+  0% {
+    top: 355px;
+  }
+  100% {
+    top: 495px;
+    z-index: 5;
+    background-color: #e88b38;
+  }
 }
 #r7 {
   width: 15px;
@@ -100,6 +186,17 @@ main {
   top: 410px;
   left: 865px;
   transform: rotate(90deg);         
+  animation: move2 3s;
+  animation-fill-mode: forwards;  
+}
+@keyframes move2 {
+  0% {
+    left: 865px;
+  }
+  100% {
+    left: 945px;
+    background-color: #1571bc;
+  }
 }
 #r8 {
   width: 140px;
@@ -109,6 +206,16 @@ main {
   top: 470px;
   left: 468px;
   opacity: 45%;
+  transition: 0.5s;
+}
+#r8:hover {
+  background-color: #49244b;
+  width: 160px;
+  height: 240px;
+  opacity: 100%;
+  filter: grayscale(20%);
+  mix-blend-mode: luminosity;
+  transition-delay: 0.5s;
 }
 #r9 {
   width: 220px;
@@ -117,6 +224,11 @@ main {
   position: absolute;
   top: 520px;
   left: 560px;
+  transition: 0.5s;
+}
+#r9:active{
+  width: 280px;
+  background-image: linear-gradient(to right, #1571bc, #e7c775);
 }
 #r10 {
   width: 160px;
@@ -125,7 +237,15 @@ main {
   position: absolute;
   top: 560px;
   left: 820px;
-  z-index: 1;
+  z-index: -0.5;
+  transition: 0.5s;
+  transition-duration: 2s;
+}
+#r10:active{
+  width: 200px;
+  height: 100px;
+  filter: blur(5px);
+  mix-blend-mode: darken;
 }
 #r11 {
   width: 250px;
@@ -134,6 +254,17 @@ main {
   position: absolute;
   top: 660px;
   left: 660px;
+  animation: move3 3s;
+  animation-fill-mode: both;
+}
+@keyframes move3 {
+  0% {
+    left: 660px;
+  }
+  100% {
+    left: 780px;
+  }
+
 }
 #l3 {
   width: 1.5px;
@@ -199,4 +330,16 @@ main {
   top: 400px;
   left: 1005px;
   opacity: 45%;
+  animation: move4 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes move4 {
+  0% {
+    top: 400px;
+  }
+  100% {
+    top: 100px;
+    background-color: #e7c775;
+    opacity: 100%;
+  }
 }
