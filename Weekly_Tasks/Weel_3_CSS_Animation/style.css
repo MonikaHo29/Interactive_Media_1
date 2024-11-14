@@ -43,7 +43,7 @@ main {
   top: -330px;
   left: 110px;
   transform: rotate(55deg);
-  transition: 0.5s;    
+  transition: 1s;                                              /* transition: 1s */ 
 }
 #r1:hover {                                                    /* #r1:hover -> Activated when a user moves the mouse over an element. */      
   background-color: #e88b38;  
@@ -59,7 +59,7 @@ main {
   top: -350px;
   left: 100px;
   transform: rotate(-12deg);
-  transition: 0.5s;
+  transition: 0.5s;                                            /* transition: 0.5s */        
   transition-duration: 2s;                                     /* transition-duration -> How long is the transation */  
 }
 #r2:active {
@@ -115,6 +115,7 @@ main {
   left: 890px;
   z-index: -0.5;
   transition: 0.5s;
+  /*transition: 3s;*/                                          /* transition: 3s -> The transition effect is lower than the default value */
   transition-property: width, height;                          /* transition-property -> Specifies the name of the CSS property the transition effect is for */                     
 }
 #r5:hover {
@@ -206,7 +207,7 @@ main {
   top: 470px;
   left: 468px;
   opacity: 45%;
-  transition: 0.5s;
+  transition: 2.5s;                                         /* transition: 2.5s -> The transition effect is lower than the default value */
 }
 #r8:hover {
   background-color: #49244b;
