@@ -1,0 +1,62 @@
+body{
+    background-color: aquamarine;
+    margin: 0;
+}
+#board{
+    /* display flex = turn this into a flexbox layout, all elements automatically positioned in a row, tips > use open flex editor in browser to see how it works */
+    display: flex;
+    /* flex-direction set direction of the main axis, row-reverse = reverse the order from right to left while row is left to right, options > row, column, row-reverse, column-reverse  */
+    flex-direction: row-reverse;                       
+    
+    /* justify-content = align items along the main axis, options > flex-start, flex-end, center, space-between, space-around,*/
+    justify-content: center;                           
+    
+    /* gap = space between the items */
+    gap: 2vw;
+
+    /*align-items = align items along the cross axis, options > flex-start, flex-end, center, stretch, baseline */
+    align-items: center;
+    
+    /* flex-wrap = whether the items should wrap or not, wrap items to the next line if they don't fit  options > wrap, nowrap, wrap-reverse */
+    flex-wrap: wrap;   
+}                              
+/*
+.pin{                                      
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20 px;
+    filter: drop-shadow( 2px 2px 2px #555);
+}*/
+.pin{                                      
+    background-color: white;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 1vw;
+    text-align: center;
+    padding: 1vw;
+    filter: drop-shadow( 2px 2px 2px #555);
+}
+/* target the class title inside the class pin */
+.pin .title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* target image tag inside the class pin */
+.pin img{
+    width: 80px;
+    height: auto;
+}
+
+/*decendant selectors point to the element inside the parent element*/
+/*div.something = all divs with class something     e.g. <div class="something">*/	   
+/*div#something = all divs with id something        e.g. <div id="something">*/          
+
+/*div .something = class something inside div       e.g. <div><p class="something"></p></div>*/    
+/*div #something = id something inside div          e.g. <div><p id="something"></p></div>*/
+
+/* use other size units like vw = viewwidth to make the layout responsive */
+/*viewport = display area of the browser window*/
