@@ -1,0 +1,24 @@
+body{
+    background-color:bisque;
+    margin: 0;
+}
+article{
+    background-color: white;
+    width: 800px;
+    margin:auto;
+    padding: 40px;
+}
+div.image {
+    width: 200px;
+    height: 200px;
+    background-image: url(images/smiley.jpg);
+    background-size: cover;
+}
+div#image_1{
+    float: right;                                   /* float the image only to the left or right */
+    margin: 20px;
+}
+div#image_2{
+    float: left;                                   /* float the image only to the left or right */
+    margin: 20px;
+}
