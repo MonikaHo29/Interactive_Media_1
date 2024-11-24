@@ -161,6 +161,7 @@ body {
     width: 25vw;
     height: 25vw;
     border-radius: 1vw;
+    margin-left: 1vw;
 }
 #pin9 {
     position: relative;                               
