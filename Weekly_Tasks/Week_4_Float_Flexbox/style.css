@@ -1,8 +1,8 @@
-body{
-    background-color: beige;
+body {
+    background-color: #e2dbc4;
     margin-top: 15vh;
 }
-#board{
+#board {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,113 +10,181 @@ body{
     align-items: start;
     flex-wrap: wrap; 
 }
-.pin{
+
+.pin {
     position: relative;                               
     width: 25vw;
     height: 25vw;
     border-radius: 1vw;
     padding: 1vw;
+    border-radius: 0;
 }
-.pin .title{
-    font-family: "Kosugi Maru", sans-serif;
-    font-size: 1.3em;
+
+.pin .title {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 1.7em;
     margin-bottom: 5px;
 }
-.pin img{
+
+.pin img {
     width: 35vh;
     height: auto;
 }
-#pin1{
-    background-color: black;
+
+#pin1 {
+    background-color: #111022;
     width: 25vw;
     height: 40vw;
 }
-#pin1 img{
+
+#pin1 img {
     width: 25vw;
     height: auto;
 }
-#pin1 .title{
+
+#pin1 .title {
     color: white;
     float: right;
     margin-top: -10vh;
     margin-right: 1vw;
     letter-spacing: 0.2em;
     z-index: 1;
+    font-size: 1.3em;
     position: relative;
     direction: rtl;
 }
-#pin2 img{
+
+#pin2 img {
+
     width: 25vw;
     height: auto;
     margin-top: -3vh;
 }
-#pin2 .title{
+
+#pin2 .title {
     z-index: 1;
     position: relative;
     font-size: 1.7em;
     text-align: center;
 }
-#pin3{
-    display:contents;
+
+#pin3 {
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#pin3 img{
+
+#pin3 img {
     width: 40vh;
-    float: right;
+    margin-bottom: 0.2vw; 
+    margin-left: -1vw;
 }
-#pin3 .title{
+
+#pin3 .title {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 1em;
-    margin-top: 1vw;
-    font-weight: bold;
-    letter-spacing: 0.4em;
+    font-size: 1.8rem;
+    margin-top: 0.5vw; 
+    letter-spacing: 0.45em;
 }
+
 #pin4 {
+    font-family: 'Kosugi Maru', sans-serif;
     background-color: darkred;
-    margin-left: 29vw;
+    margin-left: 30vw;
     margin-top: -31vh;
-    width: 51vw;
+    width: 48vw;
     height: 22vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
+
 #pin4 .title {
-    text-align: center;
-    justify-content: center;
-    font-size: 1.5em;
-    color: white;
+    font-weight: bolder;
+    font-size: 7rem;
+    color: rgba(255, 255, 255, 0.405);
+    filter: blur(5px);
+    position: absolute;
 }
-#pin5{
-    display:contents;
+
+#pin4 .title_in_englisch {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+}
+
+#pin5 {
+    display: contents;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
 }
+
 #pin5 .title {
     position: relative;
     writing-mode: vertical-lr;
     transform: rotate(360deg);
-    font-size: 1.5em;
-    margin-top: 1vw;
-}
-#pin5 img {
-    width: 20vw;
-}
-#pin6 .title{
-    font-size: 2.5em;
-    padding-bottom: 2vw;
-}
-#pin6 img{
-    width: 25vw;
-}
-#pin7 img{
-    position: relative;
-    display: flex;
-    width: 30vw;
-    height: auto;
-    margin-right: 60vw;
 }
 
+#pin5 img {
+    width: 20vw;
+    margin-left: 2vw;
+}
+
+#pin6 .title {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 2vw;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+}
+#pin6{
+    background-color: black;
+    height: 57vh;
+}
+
+#pin6 img {
+    width: 25vw;
+}
+
+#pin7 img {
+    margin-top: -2vh;
+    width: 25vw;
+    height: auto;
+    float: left;
+}
+
+#pin8 {
+    position: relative;                               
+    width: 25vw;
+    height: 25vw;
+    border-radius: 1vw;
+}
+#pin9 {
+    position: relative;                               
+    width: 25vw;
+    height: 25vw;
+    border-radius: 1vw;
+    margin-left: -8vw;
+}
+#pin10 {
+    position: relative;                               
+    width: 25vw;
+    height: 25vw;
+    border-radius: 1vw;
+    margin-left: -8vw;
+}
+#box {
+    display: flex;
+    justify-content: flex-start; /* Links ausrichten */
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 0; /* Entfernen Sie den rechten Rand */
+    margin-left: 6vw ;
+}
