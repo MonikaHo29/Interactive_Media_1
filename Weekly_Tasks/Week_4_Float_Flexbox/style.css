@@ -33,59 +33,50 @@ body {
     width: 25vw;
     height: 40vw;
 }
-
 #pin1 img {
     width: 25vw;
     height: auto;
 }
-
 #pin1 .title {
     color: white;
+    font-size: 1.3em;
+    position: relative;
     float: right;
     margin-top: -10vh;
     margin-right: 1vw;
     letter-spacing: 0.1em;
-    z-index: 1;
-    font-size: 1.3em;
-    position: relative;
     direction: rtl;
+    z-index: 1;
 }
-
 #pin2 img {
-
     width: 25vw;
     height: auto;
     margin-top: -3vh;
 }
-
 #pin2 .title {
-    z-index: 1;
-    position: relative;
     font-size: 1.7em;
+    position: relative;
     text-align: center;
+    z-index: 1;
 }
-
 #pin3 {
     display: contents;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 #pin3 img {
     width: 40vh;
     margin-bottom: 0.2vw; 
     margin-left: -1vw;
 }
-
 #pin3 .title {
+    font-size: 1.8rem;
+    letter-spacing: 0.45em;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 1.8rem;
     margin-top: 0.5vw; 
-    letter-spacing: 0.45em;
 }
-
 #pin4 {
     font-family: 'Kosugi Maru', sans-serif;
     background-color: darkred;
@@ -99,7 +90,6 @@ body {
     text-align: center;
     position: relative;
 }
-
 #pin4 .title {
     font-weight: bolder;
     font-size: 7rem;
@@ -107,16 +97,13 @@ body {
     filter: blur(5px);
     position: absolute;
 }
-
 #pin4 .title_in_englisch {
     font-weight: bolder;
     font-size: 3rem;
     color: white;
     position: absolute;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-
 #pin5 {
     display: contents;
     flex-direction: column;
@@ -124,7 +111,6 @@ body {
     justify-content: flex-end;
     height: 100%;
 }
-
 #pin5 .title {
     position: relative;
     writing-mode: vertical-lr;
@@ -132,17 +118,14 @@ body {
     font-size: 2rem;
     letter-spacing: 0.07em;
 }
-
 #pin5 img {
     width: 20vw;
     margin-left: 2vw;
 }
-
 #pin6 .title {
     color: white;
     font-size: 2.5em;
     padding-bottom: 2vw;
-    text-transform: uppercase;
     line-height: 3.5rem;
     letter-spacing: 0.02em;
 }
@@ -150,11 +133,9 @@ body {
     background-color: black;
     height: 57vh;
 }
-
 #pin6 img {
     width: 25vw;
 }
-
 #pin7 img {
     margin-top: -2vh;
     width: 25vw;
@@ -165,6 +146,14 @@ body {
 #pin7 .title{
     font-size: 1rem;
     margin-left: -1vw;
+}
+#box {
+    display: flex;
+    justify-content: flex-start; /* Links ausrichten */
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 0; /* Entfernen Sie den rechten Rand */
+    margin-left: 6vw ;
 }
 #pin8 {
     position: relative;                               
@@ -179,11 +168,6 @@ body {
     border-radius: 1vw;
     margin-left: -8vw;
 }
-
-#pin9 img, #pin10 img {
-    width: 15vw;
-    height: 45vh;
-}
 #pin10 {
     position: relative;                               
     width: 25vw;
@@ -191,16 +175,12 @@ body {
     border-radius: 1vw;
     margin-left: -10vw;
 }
+#pin9 img, #pin10 img {
+    width: 15vw;
+    height: 45vh;
+}
 #pin8 .title, #pin9 .title, #pin10 .title{
     font-size: 1.5rem;
-}
-#box {
-    display: flex;
-    justify-content: flex-start; /* Links ausrichten */
-    align-items: flex-start;
-    width: 100%;
-    margin-right: 0; /* Entfernen Sie den rechten Rand */
-    margin-left: 6vw ;
 }
 #pin11 {
     background-color: black;
