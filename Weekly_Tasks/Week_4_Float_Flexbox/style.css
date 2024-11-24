@@ -10,7 +10,6 @@ body {
     align-items: start;
     flex-wrap: wrap; 
 }
-
 .pin {
     position: relative;                               
     width: 25vw;
@@ -19,18 +18,16 @@ body {
     padding: 1vw;
     border-radius: 0;
 }
-
 .pin .title {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 1.7em;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
-
 .pin img {
     width: 35vh;
     height: auto;
 }
-
 #pin1 {
     background-color: #111022;
     width: 25vw;
@@ -47,7 +44,7 @@ body {
     float: right;
     margin-top: -10vh;
     margin-right: 1vw;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     z-index: 1;
     font-size: 1.3em;
     position: relative;
@@ -116,6 +113,8 @@ body {
     font-size: 3rem;
     color: white;
     position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 #pin5 {
@@ -130,6 +129,8 @@ body {
     position: relative;
     writing-mode: vertical-lr;
     transform: rotate(360deg);
+    font-size: 2rem;
+    letter-spacing: 0.07em;
 }
 
 #pin5 img {
@@ -143,6 +144,7 @@ body {
     padding-bottom: 2vw;
     text-transform: uppercase;
     line-height: 3.5rem;
+    letter-spacing: 0.02em;
 }
 #pin6{
     background-color: black;
@@ -158,8 +160,12 @@ body {
     width: 25vw;
     height: auto;
     float: left;
+    margin-left: -1vw;
 }
-
+#pin7 .title{
+    font-size: 1rem;
+    margin-left: -1vw;
+}
 #pin8 {
     position: relative;                               
     width: 25vw;
@@ -173,12 +179,20 @@ body {
     border-radius: 1vw;
     margin-left: -8vw;
 }
+
+#pin9 img, #pin10 img {
+    width: 15vw;
+    height: 45vh;
+}
 #pin10 {
     position: relative;                               
     width: 25vw;
     height: 25vw;
     border-radius: 1vw;
-    margin-left: -8vw;
+    margin-left: -10vw;
+}
+#pin8 .title, #pin9 .title, #pin10 .title{
+    font-size: 1.5rem;
 }
 #box {
     display: flex;
@@ -187,4 +201,19 @@ body {
     width: 100%;
     margin-right: 0; /* Entfernen Sie den rechten Rand */
     margin-left: 6vw ;
+}
+#pin11 {
+    background-color: black;
+    color: white;
+    padding: 2.5vw;
+    width: 20vw;
+    height: auto;
+    font-size: 2rem;
+    margin-top: -20vw;
+    margin-left: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
