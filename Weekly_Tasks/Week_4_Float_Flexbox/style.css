@@ -1,0 +1,122 @@
+body{
+    background-color: beige;
+    margin-top: 15vh;
+}
+#board{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    align-items: start;
+    flex-wrap: wrap; 
+}
+.pin{
+    position: relative;                               
+    width: 25vw;
+    height: 25vw;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+.pin .title{
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.pin img{
+    width: 35vh;
+    height: auto;
+}
+#pin1{
+    background-color: black;
+    width: 25vw;
+    height: 40vw;
+}
+#pin1 img{
+    width: 25vw;
+    height: auto;
+}
+#pin1 .title{
+    color: white;
+    float: right;
+    margin-top: -10vh;
+    margin-right: 1vw;
+    letter-spacing: 0.2em;
+    z-index: 1;
+    position: relative;
+    direction: rtl;
+}
+#pin2 img{
+    width: 25vw;
+    height: auto;
+    margin-top: -3vh;
+}
+#pin2 .title{
+    z-index: 1;
+    position: relative;
+    font-size: 1.7em;
+    text-align: center;
+}
+#pin3{
+    display:contents;
+}
+#pin3 img{
+    width: 40vh;
+    float: right;
+}
+#pin3 .title{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1em;
+    margin-top: 1vw;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+}
+#pin4 {
+    background-color: darkred;
+    margin-left: 29vw;
+    margin-top: -31vh;
+    width: 51vw;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#pin4 .title {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+}
+#pin5{
+    display:contents;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+#pin5 .title {
+    position: relative;
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+    font-size: 1.5em;
+    margin-top: 1vw;
+}
+#pin5 img {
+    width: 20vw;
+}
+#pin6 .title{
+    font-size: 2.5em;
+    padding-bottom: 2vw;
+}
+#pin6 img{
+    width: 25vw;
+}
+#pin7 img{
+    position: relative;
+    display: flex;
+    width: 30vw;
+    height: auto;
+    margin-right: 60vw;
+}
+
