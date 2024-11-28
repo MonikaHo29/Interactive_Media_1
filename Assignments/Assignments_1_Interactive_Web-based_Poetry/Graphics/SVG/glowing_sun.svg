@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 719 719">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_11);
+        filter: url(#outer-glow-1);
+        stroke-width: 0px;
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_11" data-name="Unbenannter Verlauf 11" cx="359.5" cy="359.76" fx="359.5" fy="359.76" r="269.02" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b61100"/>
+      <stop offset=".44" stop-color="#b41000"/>
+      <stop offset=".6" stop-color="#ad0f00"/>
+      <stop offset=".71" stop-color="#a10d00"/>
+      <stop offset=".8" stop-color="#900b00"/>
+      <stop offset=".88" stop-color="#7a0700"/>
+      <stop offset=".95" stop-color="#600300"/>
+      <stop offset="1" stop-color="#460000"/>
+    </radialGradient>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="30"/>
+      <feFlood flood-color="#a03a1f" flood-opacity=".79"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="sun">
+    <ellipse class="cls-1" cx="359.5" cy="359.76" rx="268.99" ry="269.05"/>
+  </g>
+</svg>

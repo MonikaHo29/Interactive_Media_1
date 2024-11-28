@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 436.15 436.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #5b0d16;
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_5);
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #2b2b2b;
+        stroke-width: 3px;
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_5" data-name="Unbenannter Verlauf 5" cx="216.77" cy="218.51" fx="216.77" fy="218.51" r="211.07" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b61100"/>
+      <stop offset=".44" stop-color="#b41000"/>
+      <stop offset=".6" stop-color="#ad0f00"/>
+      <stop offset=".71" stop-color="#a10d00"/>
+      <stop offset=".8" stop-color="#900b00"/>
+      <stop offset=".88" stop-color="#7a0700"/>
+      <stop offset=".95" stop-color="#600300"/>
+      <stop offset="1" stop-color="#460000"/>
+    </radialGradient>
+  </defs>
+  <g id="Ebene_4" data-name="Ebene 4">
+    <g id="umrella3">
+      <g>
+        <path class="cls-2" d="M216.77,429.58c-116.39,0-211.07-94.69-211.07-211.07S100.39,7.44,216.77,7.44s211.07,94.69,211.07,211.07-94.69,211.07-211.07,211.07Z"/>
+        <path class="cls-1" d="M216.77,7.94c28.43,0,56,5.57,81.96,16.55,25.07,10.61,47.59,25.79,66.93,45.13,19.34,19.34,34.52,41.86,45.13,66.93,10.98,25.96,16.55,53.54,16.55,81.96s-5.57,56-16.55,81.96c-10.61,25.07-25.79,47.59-45.13,66.93s-41.86,34.52-66.93,45.13c-25.96,10.98-53.54,16.55-81.96,16.55s-56-5.57-81.96-16.55c-25.07-10.61-47.59-25.79-66.93-45.13-19.34-19.34-34.52-41.86-45.13-66.93-10.98-25.96-16.55-53.54-16.55-81.96s5.57-56,16.55-81.96c10.61-25.07,25.79-47.59,45.13-66.93,19.34-19.34,41.86-34.52,66.93-45.13,25.96-10.98,53.54-16.55,81.96-16.55M216.77,6.94C99.93,6.94,5.2,101.66,5.2,218.51s94.72,211.57,211.57,211.57,211.57-94.72,211.57-211.57S333.62,6.94,216.77,6.94h0Z"/>
+      </g>
+      <circle class="cls-3" cx="214.15" cy="170.4" r="60.71"/>
+      <circle class="cls-3" cx="214.15" cy="260.98" r="60.71"/>
+      <circle class="cls-3" cx="257.51" cy="213.76" r="60.71"/>
+      <circle class="cls-3" cx="166.93" cy="213.76" r="60.71"/>
+      <g>
+        <line class="cls-4" x1="213.61" x2="213.61" y2="436.15"/>
+        <line class="cls-4" y1="215.39" x2="436.15" y2="215.39"/>
+        <line class="cls-4" x1="66.6" y1="371.33" x2="362.88" y2="56.4"/>
+        <line class="cls-4" x1="375.5" y1="367.72" x2="58.65" y2="69.63"/>
+        <line class="cls-4" x1="295.77" y1="420.94" x2="134.86" y2="17.32"/>
+        <line class="cls-4" x1="419.14" y1="133.26" x2="14.69" y2="294.5"/>
+        <line class="cls-4" x1="418.1" y1="303.56" x2="18.06" y2="131.57"/>
+        <line class="cls-4" x1="299.41" y1="16.09" x2="127.81" y2="416.49"/>
+      </g>
+    </g>
+  </g>
+</svg>
