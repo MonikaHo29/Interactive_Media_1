@@ -87,9 +87,20 @@ main {
   0% {
     transform: rotate(0deg);                                   /* transform: rotate(0deg) -> object not rotate */              
   }
-  100% {                                                      
-    transform: rotate(360deg);                                 /* transform: rotate(360deg) -> object rotate 360 degrees */             
+  25% {                                                      
+    transform: rotate(90deg);                                 /* transform: rotate(360deg) -> object rotate 360 degrees */             
   }
+  50% {
+    transform: rotate(180deg);                                   /* transform: rotate(0deg) -> object not rotate */              
+  }
+  75% {                                                      
+    transform: rotate(270deg);                                 /* transform: rotate(360deg) -> object rotate 360 degrees */             
+  }
+  100% {                                                      
+  transform: rotate(360deg);                                 /* transform: rotate(360deg) -> object rotate 360 degrees */             
+  }
+  
+  
 }
 #r3:hover {
   background-color: #e88b38;

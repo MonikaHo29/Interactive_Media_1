@@ -1,0 +1,84 @@
+html {
+  background-color: blueviolet;
+}
+
+.grid ul.cards {
+  width: 100vw;
+  height: 100vh;
+  /* remove the bullets of ul */
+  list-style: none;
+  /* remove the default margin padding of ul */
+  margin: 0;
+  padding: 0;
+  /* turn this into a grid layout */
+  display: grid;
+  /* define the columns of the grids  ================================== */
+  /* pace-separated list, each setting the width of a respective column. */
+  /* grid-template-columns: auto auto; */
+  /* grid-template-columns: 40% 60%; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* define the rows of the grids  ===================================== */
+  /* pace-separated list, each setting the height of a respective row. */
+  grid-template-rows: 1fr 1fr 1fr;
+  /* minmax(_,_) takes a minimum and maximum length value */
+  /* min value can not be a flex value */
+  /* grid-template-rows: minmax(0,1fr) minmax(0,2fr) minmax(0,1fr); */
+  /* =================================================================== */
+  /* size of the gap between grid items */
+  grid-gap: 2vw;
+  /* define how grid items are aligned along the row axis (horizontally) */
+  justify-items: center;
+  /* define how grid items are aligned along the column axis (vertically) */
+  align-items: end;
+  /* define the alignment of the entire grid along the row axis (horizontally) */
+  /* grid-template-columns: 250px 400px; */
+  /* justify-content: start; */
+  /* define the alignment of the entire grid along the column axis (vertically) */
+  /* grid-template-rows: 150px 250px; */
+  /* align-content: end; */
+}
+.grid ul.cards li {
+  background-color: white;
+  width: auto;
+  height: auto;
+  min-width: 25vw;
+  min-height: 25vh;
+  padding: 3vh;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #d0bfff;
+}
+.grid .title {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* define the grid item positions for the individual cards */
+#card1 {
+  background-color: cyan;
+  /* indicate the column grid line that the item starts */
+  grid-column-start: 2;
+  /* indicate the column grid line that the item ends */
+  grid-column-end: 4;
+  /* indicate the row grid line that the item starts */
+  grid-row-start: 1;
+  /* indicate the row grid line that the item ends */
+  grid-row-end: 2;
+}
+#card2 {
+  background-color: greenyellow;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  /* make the card height span the entire grid row */
+  align-self: stretch;
+}
+#card3 {
+  background-color: orange;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
