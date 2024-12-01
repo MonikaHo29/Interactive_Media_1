@@ -277,7 +277,6 @@ section.grid {
   padding-top: 10vw;
 }
 .grid .dishPrice {
-  text-align: right;
   padding-left: 5vw;
   line-height: 2em;
   font-weight: lighter;
