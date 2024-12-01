@@ -141,20 +141,23 @@ section + .opening {
 .img_vegetarian {
   position: absolute;
   display: flex;
-  width: 52vw;
+  width: 120.5vw;
   margin-top: 20vw;
-  opacity: 80%;
+  margin-left: -69vw;
+  transform: scaleX(-1);
+  opacity: 50%;
 }
+
 .img_nonvegetarian {
   position: absolute;
   display: flex;
   width: 52vw;
   margin-top: 20vw;
-  margin-left: 52vw;
-  opacity: 80%;
+  margin-left: 51.5vw;
+  opacity: 60%;
 }
-.border {
-  margin-top: 80%;
+#border {
+  margin-top: 85%;
   opacity: 0;
 }
 
