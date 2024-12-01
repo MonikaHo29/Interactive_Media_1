@@ -1,0 +1,285 @@
+body {
+  background-color: #232222;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8em;
+  color: white;
+}
+header {
+  width: 100%;
+  margin-top: 8vw;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20vw;
+  animation: fadeIn-header 3.5s ease-in-out forwards;
+  opacity: 0; 
+}
+@keyframes fadeIn-header {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+footer {
+    width: 100%;
+    margin-top: 20vw;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+header img, footer img {
+  width: 20%;
+  height: 20%;
+  padding-left: 5vw;
+}
+header h1, footer h1 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 5.7em;
+  transform: rotate(-90deg);
+  position: relative; /* Ändern Sie die Positionierung */
+  top: 10%; /* Zentrieren Sie vertikal */
+  left: 0; /* Positionieren Sie am linken Rand */
+  transform: translateX(-42%) rotate(-90deg);
+}
+#hr_opening {
+  margin-left: 20%;
+}
+.opening1 {
+  position: relative;
+  top: 10%;
+  left: 35%;
+  color: #d19d62;
+  opacity: 50%;
+}
+.opening1:hover, .opening2:hover{
+    opacity: 100%;
+}
+b {
+  font-weight: lighter;
+}
+b.veg {
+  font-weight: bold;
+}
+span{
+    font-weight: normal; 
+    text-wrap: nowrap;	
+    
+}
+span::after {
+    content: "Signature";
+    font-size: 0.5em;
+    font-weight: normal;
+    opacity: 0;
+    transition: 0.5s;
+    text-wrap: nowrap;	
+}
+span:hover::after {
+    opacity: 1;
+    text-wrap: nowrap;	
+}
+.opening2 {
+  position: relative;
+  top: 50%;
+  left: 70%;
+  opacity: 50%;
+  color: #d19d62;
+}
+section + .opening {
+  display: flex;
+  position: relative;
+  height: 1080px;
+}
+.selectVegetarian {
+  position: absolute;
+  top: 50vw;
+  left: 38vw;
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  opacity: 15%;
+}
+.select {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+}
+.selectNonVegetarian {
+  position: absolute;
+  top: 50vw;
+  left: 54.5vw;
+  text-align: left;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: white;
+  opacity: 15%;
+}
+.img_vegetarian {
+  position: absolute;
+  display: flex;
+  width: 52vw;
+  margin-top: 20vw;
+  opacity: 80%;
+}
+.selectVegetarian:hover, .selectNonVegetarian:hover{
+    opacity: 80%;
+}
+.img_nonvegetarian {
+  position: absolute;
+  display: flex;
+  width: 52vw;
+  margin-top: 20vw;
+  margin-left: 52vw;
+  opacity: 80%;
+}
+.border{
+    margin-top: 80%;
+    opacity: 0;
+}
+section.grid {
+  margin-top: 100%;
+}
+.grid ul.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr, 1fr;
+  justify-items: center;
+  align-items: end;
+  margin-top: -90%;
+}
+.grid ul.cards #foodSection {
+  width: auto;
+  height: auto;
+  min-width: 20vw;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 1em;
+  margin-left: 1vw;
+}
+.grid ul.cards #dish {
+  width: auto;
+  height: auto;
+  min-width: 40vw;
+  min-height: 70vh;
+  text-align: center;
+  color: #d19d62;
+}
+.grid ul.cards #price {
+  width: auto;
+  height: auto;
+  min-width: 3vw;
+  min-height: 70vh;
+  text-align: center;
+  margin-left: -30vw;
+}
+.grid ul.cards #discription {
+  width: auto;
+  height: auto;
+  min-width: 40vw;
+  min-height: 10vh;
+  text-align: center;
+  margin-left: -10vw;
+}
+#foodSection {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+#dish {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#price {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#discription {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.grid .title {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 5.5em;
+  margin-top: 21vw;
+  opacity: 0;
+  rotate: -90deg;
+  transform: translateY(-100%) ;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.grid .title.visible,
+.grid .title2.visible,
+.grid .title3.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.grid .title2 {
+    color: #d19d62;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 6em;
+    margin-top: 29vw;
+    opacity: 0;
+    rotate: -90deg;
+    transform: translateY(-100%) ;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  .grid .title3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 6em;
+    margin-top: -47vw;
+    margin-left: 10vw;
+  opacity: 0;
+  rotate: -90deg;
+  transform: translateY(-100%) ;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+.grid .dishName {
+  text-align: left;
+  padding-left: 5vw;
+  line-height: 2em;
+  font-weight: lighter;
+  padding-top: 10vw;
+}
+.grid .dishPrice {
+  text-align: right;
+  padding-left: 5vw;
+  line-height: 2em;
+  font-weight: lighter;
+  padding-top: 10vw;
+  padding-bottom: 3vw;
+}
+.grid .dishDescription {
+  text-align: right;
+  line-height: 2.5em;
+}
+  #copyright{
+    font-size: 0.5em;
+    font-weight: lighter;
+    padding-top: 10vw;
+  }
+
+hr #Seitensprung, hr #Seietnsprung2{
+    opacity: 0;
+}

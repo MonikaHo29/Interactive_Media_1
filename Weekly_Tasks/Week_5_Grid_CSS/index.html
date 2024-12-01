@@ -1,23 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GOLDEN Harvest</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <img src="images/Logo.png">
-    <h1>Restaurant Name</h1>
-  </header>
-  <main>
-    <section class="menu">
-      <!-- Your menu items will go here -->
-    </section>
-  </main>
-  <footer>
-		<p>&copy; 2023 Restaurant. All rights reserved.</p>
-	</footer>
-</body>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GOLDEN Harvest</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <img src="images/logo.svg"/>
+      <h1>GOLDEN HARVEST</h1>
+    </header>
+
+    <main>
+      <section class="opening">
+        <h2>OPENING</h2>
+        <p class="opening1"> MON to FRI <br/> <b>11 AM - 9 PM</b> </p>
+        <hr id="hr_opening"/>
+        <p class="opening2"> SAT to SUN <br/> <b>11 AM - 12 PM</b> </p>
+      </section>
+
+      <section class="selection">
+        <div class="select">
+          <img class="img_vegetarian" src="images/Vegetarian.gif"/>
+          <a class="selectVegetarian" href="#Seitensprung1">Vegetarian<br/> <b>Menu</b> </a>
+          <img class="img_nonvegetarian" src="images/NonVegetarian.gif"/>
+          <a class="selectNonVegetarian" href="#Seitensprung2">Non Vegetarian<br/> <b>Menu</b> </a>
+        </div>
+      </section>
+
+      <hr class="border">
+
+      <section class="grid">
+        <ul class="cards"> <hr id="Seitensprung1">
+            <li id="foodSection">
+                <h3 class="title">STARTER</h3>
+            </li>
+            <li id="dish">
+                <p class="dishName"> Veggie Spring Rolls <br/> Stuffed Mushrooms <br/> <span>Caprese Salad &#10031 &nbsp </span><br/> Bruschetta </p>
+            </li>
+            <li id="price">
+                <p class="dishPrice"> Price in $ <br/> 5.99 <br/> 6.49 <br/> 7.25 <br/> 6.99 </p>
+            </li>
+            <li id="discription">
+                <p class="dishDescription"> Vegetarian <b>Menu</b> </p>
+            </li>
+        </ul>    
+      </section>
+
+      <section class="grid">
+        <ul class="cards">
+          <li id="foodSection">
+            <div class="Main">
+                <h3 class="title2">MAIN</h3>
+                <h3 class="title3">DISH</h3>
+            </div>
+          </li>
+          <li id="dish">
+            <p class="dishName"> Mushrooms Risotto <br/> Vegetable Stir Fry <br/> <span>Spinach and Rcotta Ravioli &#10031 &nbsp</span> <br/> Eggplant Parmesan </p>
+          </li>
+          <li id="price">
+            <p class="dishPrice"> Price in $ <br/> 12.99 <br/> 11.99 <br/> 13.95 <br/> 10.99 </p>
+          </li>
+          <li id="discription">
+            <p class="dishDescription"> Vegetarian <b>Menu</b> </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <ul class="cards"> <hr id="Seitensprung2">
+          <li id="foodSection">
+            <h3 class="title">STARTER</h3>
+          </li>
+          <li id="dish">
+            <p class="dishName"> Chicken Wings <br/> <span>Shrimp Cocktail &#10031 &nbsp</span> <br/> Calamari Rings <br/> Beef Satay </p>
+          </li>
+          <li id="price">
+            <p class="dishPrice"> Price in $ <br/> 8.99 <br/> 9.95 <br/> 7.99 <br/> 9.49 </p>
+            </li>
+          <li id="discription">
+            <p class="dishDescription"> Non Vegetarian <b>Menu</b></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <ul class="cards">
+            <li id="foodSection">
+                <h3 class="title2">MAIN</h3>
+                <h3 class="title3">DISH</h3>
+            </li>
+            <li id="dish">
+                <p class="dishName"> Grilled Salmon <br/> Steak with Mashed Potato <br/> Lemon Herb Roasted Chicken <br/> <span>Seafood Paella &#10031 &nbsp</span> </p>
+            </li>
+              <li id="price">
+                <p class="dishPrice"> Price in $ <br/> 18.99 <br/> 21.95 <br/> 16.99 <br/> 19.49 </p>
+            </li>
+          <li id="discription">
+            <p class="dishDescription"> Non Vegetarian <b>Menu</b> </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <ul class="cards">
+          <li id="foodSection">
+            <h3 class="title">DESSERT</h3>
+          </li>
+          <li id="dish">
+            <p class="dishName"> Chocolate Cake <br/> Chocolate Brownies <br/> <span>Chocolate Fondue &#10031 &nbsp</span> <br/> Chocolate Mousse (new) </p>
+          </li>
+          <li id="price">
+            <p class="dishPrice"> Price in $ <br/> 6.99 <br/> 5.49 <br/> 9.25 <br/> 7.99 </p>
+          </li>
+          <li id="discription">
+            <p class="dishDescription"> Chocolate Delight <b>Dessert</b> </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <ul class="cards">
+          <li id="foodSection">
+            <h3 class="title">DESSERT</h3>
+          </li>
+          <li id="dish">
+            <p class="dishName"> Fruit Tart <br/> Mixed Fruit Salad <br/> <span>Berry Chessecake &#10031 &nbsp</span> <br/> Mango Sorbet </p>
+          </li>
+          <li id="price">
+            <p class="dishPrice"> Price in $ <br/> 7.95 <br/> 6.49 <br/> 8.99 <br/> 5.99 </p>
+          </li>
+          <li id="discription">
+            <p class="dishDescription"> Fruit Medley <b>Dessert</b> </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+        <img src="images/logo.svg"/>
+        <h1>GOLDEN HARVEST</h1>
+      <p id="copyright">&copy; 2023 Golden Harvest. All rights reserved.</p>
+    </footer>
+
+  </body>
 </html>
