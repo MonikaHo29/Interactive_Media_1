@@ -172,7 +172,7 @@ section.grid {
   align-items: end;
   margin-top: -90%;
 }
-.grid ul.menu #foodSection {
+.grid ul.menu .foodSection {
   width: auto;
   height: auto;
   min-width: 20vw;
@@ -181,7 +181,7 @@ section.grid {
   font-size: 1em;
   margin-left: 1vw;
 }
-.grid ul.menu #dish {
+.grid ul.menu .dish {
   width: auto;
   height: auto;
   min-width: 40vw;
@@ -189,7 +189,7 @@ section.grid {
   text-align: center;
   color: #d19d62;
 }
-.grid ul.menu #price {
+.grid ul.menu .price {
   width: auto;
   height: auto;
   min-width: 3vw;
@@ -197,7 +197,7 @@ section.grid {
   text-align: center;
   margin-left: -30vw;
 }
-.grid ulmenu #discription {
+.grid ul.menu .discription {
   width: auto;
   height: auto;
   min-width: 40vw;
@@ -205,25 +205,25 @@ section.grid {
   text-align: center;
   margin-left: -10vw;
 }
-#foodSection {
+.foodSection {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
 }
-#dish {
+.dish {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-#price {
+.price {
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-#discription {
+.discription {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
