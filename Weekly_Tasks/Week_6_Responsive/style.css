@@ -1,0 +1,33 @@
+*{
+    /*reset = to clear all default styles*/
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}    
+html {
+    /*typography presets*/
+    font-family: "Abel", serif;
+    font-size: 20px;
+}
+header{
+    background-color: #A01F19;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+nav ul {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 8vw;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+#ketchup{
+    font-family: "Denk One", sans-serif;
+    font-size: 3rem;
+}
