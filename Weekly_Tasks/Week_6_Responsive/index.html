@@ -7,35 +7,134 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Denk+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Denk+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Denk+One&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Denk+One&display=swap" rel="stylesheet"/> 
   </head>
+
   <body>
+
     <header>
       <nav>
         <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">HISTORY</a></li>
+            <li><a href="#section2">ABOUT</a></li>
+            <li><a href="#section3">HISTORY</a></li>
           <li><a id="ketchup" href="#">KETCHUP</a></li>
-          <li><a href="#">MANUFACTURE</a></li>
-          <li><a href="#">VARIANTS</a></li>
+          <li><a href="#hr_section4">MANUFACTURE</a></li>
+          <li><a href="#section5">VARIANTS</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="section 1">
+      <section id="section1">
         <div class="flex-container">
-            <h1 class="title">Ketchup <br> A Delicious Condiment</h1>
-            <p>Ketchup is a sauce used as a condiment, originally from East Asia, but now used in cuisines worldwide. It's known for its tangy, sweet flavor and its versatile use in a variety of dishes.</p>
+            <img class="bottle1" src="images/ketchup_bottle.svg" />
+            <div class="text" id="text1">
+                <h1 class="title"><b>Ketchup</b><br/>A Delicious Condiment</h1>
+                <p>
+                Ketchup is a sauce used as a condiment, originally from East Asia,
+                but now used in cuisines worldwide. It's known for its tangy,
+                sweet flavor and its versatile use in a variety of dishes.
+                </p>
+            </div>
+        </div>
+      </section>
+
+      <section id="section2">
+        <div class="flex-container">
+            <div class="text" id="text2">
+                <h1 class="title">About Ketchup</h1>
+                <p>
+                    The earliest known form of Ketchup was a fermented fish sauce from 
+                    southern China. It made its way to Malaysia and Indonesia where it 
+                    became kecap (pronounced "kay-chap"). That word evolved into ketchup 
+                    in English. Originally, recipes used egg whites, mushrooms, oysters, 
+                    grapes, mussels, or walnuts, among other ingredients, but now the 
+                    unmodified term usually refers to tomato ketchup. </br> <br>
+                    <a class="link2" href="https://en.wikipedia.org/wiki/Ketchup">LEARN MORE</a>
+                </p>
+            </div>
+            <img class="ketchup1" src="images/ketchup_1.svg" />
+            <img class="bottle2" src="images/ketchup_bottle.svg" />
+        </div>
+      </section>
+
+      <section id="section3">
+        <div class="flex-container">
+            <img class="ketchup2" src="images/ketchup_2.svg" />
+            <div class="text" id="text3">
+                <h1 class="title"><b>History</b></h1>
+                <p>
+                    Ketchup has a fascinating history that spans the globe. Various recipes 
+                    for ketchup were published in the 18th century, with ingredients including 
+                    mushrooms, oysters, and fruits. However, it was in the 19th century that 
+                    tomato ketchup began its rise to condiment fame. It was popularized in 
+                    the United States by entrepreneurs such as Henry J. Heinz and quickly 
+                    became a staple in homes and restaurants alike. <br> <br>
+                    <a class="link1" href="https://en.wikipedia.org/wiki/Ketchup">LEARN MORE</a>
+                </p>
+            </div>
+            <img class="ketchup3" src="images/ketchup_3.svg" />
+        </div>
+      </section>
+
+      
+      <section id="section4">
+        <hr id="hr_section4">
+        <div class="flex-container">
+            <div class="text" id="text4">
+                <h1 class="title"><b>Ketchup</b><br />Manufacture</h1>
+                <p>
+                    Modern ketchup is sweet and tangy, typically made from tomatoes, sweetener, 
+                    vinegar, and seasonings. These ingredients are blended together and cooked 
+                    slowly to achieve a rich, flavorful sauce. The tomatoes used in production 
+                    are often ripe and of high quality, to ensure the best flavor. The resulting 
+                    product is then bottled and distributed around the world. <br> <br>
+                    <a class="link1" href="https://en.wikipedia.org/wiki/Ketchup">LEARN MORE</a>
+                </p>
+            </div>
+            <img class="ketchup4" src="images/ketchup_4.svg" />
+        </div>
+      </section>
+
+      <section id="section5">
+        <div class="flex-container">
+            <div class="text" id="text5">
+                <h1 class="title">Ketchup Variants</h1>
+                <p>
+                    Beyond tomato ketchup, there are many variants of this beloved condiment. For 
+                    example, mushroom ketchup is a traditional British condiment made from cooked, 
+                    salted mushrooms. Fruit ketchup, popular in the Philippines, is made from bananas. 
+                    There's also a spicy version of ketchup, often paired with fast food or used as 
+                    a base for other sauces. <br> <br>
+                    <a class="link2" href="https://en.wikipedia.org/wiki/Ketchup">LEARN MORE</a>
+                </p>
+            </div>
+            <div class="text" id="text6">
+                <h2>Popular Dishes <br> with Ketchup</h2>
+                <ul>
+                    <li>Fries and ketchup</li>
+                    <li>Hamburger</li>
+                    <li>Meatloaf</li>
+                    <li>Hot dogs</li>
+                    <li>Chicken Tenders</li>
+                    <li>Eggs</li>
+                </ul>
+            </div>
+            <img class="sauces" src="images/ketchup_sauces.svg" />
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <nav>
+            <ul>
+              <li id="ketchup_footer"><a id="ketchup" href="#">KETCHUP</a></li>
+            </ul>
+          </nav>
+        <p>Page content sourced from <a id="wikipedia" href="https://en.wikipedia.org/wiki/Ketchup">Wikipedia</a></p>
+    </footer>
+
   </body>
+  
 </html>

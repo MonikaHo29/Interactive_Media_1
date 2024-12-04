@@ -1,33 +1,233 @@
-*{
-    /*reset = to clear all default styles*/
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}    
-html {
-    /*typography presets*/
-    font-family: "Abel", serif;
-    font-size: 20px;
+* {
+  /*reset = to clear all default styles*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    background-color: #A01F19;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
+html {
+  /*typography presets*/
+  font-family: "Abel", serif;
+  font-size: 20px;
+  font-weight: lighter;
+  overflow-x: hidden;
+}
+header {
+  background-color: #a01f19;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  padding-top: 2vw;
 }
 nav ul {
-    display: flex;
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    gap: 8vw;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8vw;
 }
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
 }
-#ketchup{
-    font-family: "Denk One", sans-serif;
-    font-size: 3rem;
+nav a:hover {
+  color: #ffb81c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#ketchup {
+  font-family: "Denk One", sans-serif;
+  font-size: 3rem;
+}
+#ketchup:hover {
+  color: white;
+  font-size: 3rem;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-wrap: wrap;
+}
+#section1 {
+  background-color: #a01f19;
+}
+.bottle1 {
+  width: 35%;
+  margin-left: 10vw;
+  margin-top: -4vw;
+}
+.text {
+  position: relative;
+  color: white;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#text1 {
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+#text2 {
+  position: absolute;
+  margin-top: 15vw;
+  margin-left: 10vw;
+  float: left;
+  color: #302c2c;
+}
+h1 {
+  font-family: "Denk One", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 3vw;
+  text-transform: uppercase;
+}
+b {
+  font-size: 4rem;
+  transition: 0.5s;
+}
+p {
+  line-height: 1.5rem;
+}
+#section2 {
+  background-color: #ffb81c;
+}
+a {
+  text-decoration: none;
+}
+.ketchup1 {
+  position: relative;
+  width: 50%;
+  margin-left: 50vw;
+  margin-top: -0.1vw;
+}
+.bottle2 {
+  position: relative;
+  width: 35%;
+  margin-left: -42vw;
+  margin-top: -0.1vw;
+}
+#section3 {
+  background-color: #302c2c;
+}
+.ketchup2 {
+  width: 65%;
+  margin-left: -20vw;
+}
+#text3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 28vw;
+  margin-top: 10vw;
+  margin-left: 35vw;
+  position: absolute;
+}
+.ketchup3 {
+  width: 100%;
+  margin-left: -5vw;
+  margin-top: -5vw;
+}
+.link1 {
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.link2 {
+  color: #302c2c;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.link2:hover,
+.link1:hover {
+  color: #a01f19;
+  font-size: 1.4rem;
+}
+#section4 {
+  background-color: #302c2c;
+}
+#text4 {
+  position: absolute;
+  margin-left: 10vw;
+  float: left;
+  margin-top: 10vw;
+}
+.ketchup4 {
+  width: 50%;
+  margin-left: 52vw;
+  margin-top: -10vw;
+}
+#hr_section4 {
+  opacity: 0;
+  margin-top: -10vw;
+}
+#section5 {
+  background-color: #ffb81c;
+}
+#text5 {
+  position: absolute;
+  margin-top: 5vw;
+  margin-left: 10vw;
+  float: left;
+  color: #302c2c;
+}
+h2 {
+  margin-bottom: 1.5vw;
+}
+#text6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: right;
+  position: absolute;
+  margin-top: 10vw;
+  margin-left: 60vw;
+  color: white;
+  font-weight: lighter;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+li {
+  list-style-type: none;
+}
+li:hover {
+  color: #a01f19;
+  font-weight: bold;
+}
+.sauces {
+  width: 100%;
+  margin-top: 15vw;
+}
+footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #a01f19;
+  height: 12vw;
+  gap: 1vw;
+}
+#wikipedia {
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#wikipedia:hover {
+  font-size: 1.2rem;
+}
+.title {
+  transition: 0.5s;
+  text-wrap: nowrap;
+}
+.title:hover {
+  font-size: 3rem;
+  text-wrap: nowrap;
+}
+b:hover {
+  font-size: 5rem;
+  text-wrap: nowrap;
 }
