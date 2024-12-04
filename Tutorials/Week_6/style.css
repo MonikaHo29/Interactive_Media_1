@@ -1,15 +1,135 @@
-html {}
-
-body {
-  font-family: Arial, sans-serif;
+*{
+    /*reset = to clear all default styles*/
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}    
+html {
+    /*typography presets*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
-p {}
+body {
+    background-color: cornflowerblue;
+}
 
-h3 {}
+p,a {
+    font-size: 1rem; /*rem = relative to the font-size of the root element*/
+    line-height: 1.25;
+}
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
 
-section {}
+ul li{
+    margin-left: 2rem;
+}
 
-article {}
+section {
+    display: flex; /*display= flex = to bring the items in a row*/
+    justify-content: space-around;
+    flex-wrap: wrap; /*flex-wrap = wrap = to wrap the items to the next row*/
+    gap: 2vw;
+    margin: 4vh 4vw;
+}
 
-img {}
+article {
+    background-color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+
+    /*flex-grow: 1; /*flex-grow = 1 = to make the items grow equally*/
+    /*flex-shrink = 1 = to make the items shrink equally*/
+    /*flex-basis = 20% = to set the initial size of the items*/
+    /*
+    flex-grow: 1;
+    flex-shrink: 1; 
+    flex-basis: 20%;
+    */
+    flex: 1 1 20%; /*shorthand for the above three properties*/
+
+}
+
+/* scale the images responsively but keep the maximum size 100% */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*DEFINITE the layout for the small screens, set breakpoints for the medium and large screens*/
+/*@media screen and (max-width: 1200px) {
+    body{
+        background-color: hotpink;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    body{
+        background-color: lightgreen;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    article{
+        flex: 1 1 20%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        background-color: yellow;
+    }
+      section {
+        margin: 2vh 2vw;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    article{
+        flex: 1 1 40%;
+    }
+}
+@media screen and (max-width: 767px) {
+    body{
+        background-color: lightcoral;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    article{
+        flex: 1 1 80%;
+    }
+}
+*/
+
+/* CASCADING make the code shorter and more readable, use the min-width for the breakpoints */   
+@media screen and (max-width: 1199px) {
+    body{
+        background-color: yellow;
+    }
+    section {
+        margin: 2vh 2vw;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1023px) {
+    body{
+        background-color: hotpink;
+    }
+    article{
+        flex: 1 1 40%;
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        background-color: lightcoral;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    article{
+        flex: 1 1 80%;
+    }
+}
