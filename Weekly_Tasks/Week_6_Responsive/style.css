@@ -29,7 +29,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 nav a:hover {
   color: #ffb81c;
