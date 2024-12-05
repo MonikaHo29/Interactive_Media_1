@@ -300,7 +300,7 @@ footer {
   .ketchup3 {
     position: absolute;
     width: 45%;
-    height: 50%;
+    height: 70%;
     margin-left: 55vw;
     margin-top: 20vw;
   }
@@ -344,14 +344,6 @@ footer {
   #text2 {
     margin-top: 12vw;
   }
-  /*----------- Images ----------- */
-  .ketchup3 {
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    margin-left: 60vw;
-    margin-top: 20vw;
-  }
   .ketchup4 {
     width: 45%;
     margin-left: 65vw;
@@ -384,7 +376,7 @@ footer {
   .ketchup3 {
     position: absolute;
     width: 45%;
-    height: 45%;
+    height: 60%;
     margin-left: 55vw;
     margin-top: 15vw;
   }
@@ -402,7 +394,7 @@ footer {
   .ketchup3 {
     position: absolute;
     width: 40%;
-    height: 40%;
+    height: 50%;
     margin-left: 60vw;
     margin-top: 15vw;
   }
@@ -427,7 +419,7 @@ footer {
   .ketchup3 {
     position: absolute;
     width: 40%;
-    height: 28%;
+    height: 35%;
     margin-left: 60vw;
     margin-top: 15vw;
   }
