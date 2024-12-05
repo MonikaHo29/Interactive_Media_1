@@ -96,16 +96,14 @@ a {
   text-decoration: none;
 }
 .ketchup1 {
-  position: relative;
-  width: 50%;
+  position: absolute;
+  width: 47.2%;
   margin-left: 50vw;
-  margin-top: -0.1vw;
 }
 .bottle2 {
   position: relative;
   width: 35%;
-  margin-left: -42vw;
-  margin-top: -0.1vw;
+  margin-left: 56vw;
 }
 #section3 {
   background-color: #302c2c;
