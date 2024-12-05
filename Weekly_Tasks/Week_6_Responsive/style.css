@@ -19,6 +19,7 @@ header {
   height: 15vh;
   padding-top: 2vw;
 }
+/*---------- Navigation Bar ----------*/
 nav ul {
   display: flex;
   list-style: none;
@@ -44,6 +45,7 @@ nav a:hover {
   color: white;
   font-size: 3rem;
 }
+/* ----------- Flex Container/Sections ----------- */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -52,10 +54,45 @@ nav a:hover {
 #section1 {
   background-color: #a01f19;
 }
-.bottle1 {
-  width: 35%;
-  margin-left: 10vw;
-  margin-top: -4vw;
+#section2, #section5 {
+  background-color: #ffb81c;
+}
+#section3, #section4 {
+  background-color: #302c2c;
+}
+#hr_section4 {
+  opacity: 0;
+  margin-top: -10vw;
+}
+/*----------- Title ----------- */
+.title {
+  transition: 0.5s;
+  text-wrap: nowrap;
+}
+.title:hover {
+  font-size: 3rem;
+  text-wrap: nowrap;
+}
+h1 {
+  font-family: "Denk One", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 3vw;
+  text-transform: uppercase;
+}
+b {
+  font-size: 4rem;
+  transition: 0.5s;
+}
+b:hover {
+  font-size: 5rem;
+  text-wrap: nowrap;
+}
+h2 {
+  margin-bottom: 1.5vw;
+}
+/*----------- Text ----------- */
+p {
+  line-height: 1.5rem;
 }
 .text {
   position: relative;
@@ -76,42 +113,6 @@ nav a:hover {
   float: left;
   color: #302c2c;
 }
-h1 {
-  font-family: "Denk One", sans-serif;
-  font-size: 2rem;
-  padding-bottom: 3vw;
-  text-transform: uppercase;
-}
-b {
-  font-size: 4rem;
-  transition: 0.5s;
-}
-p {
-  line-height: 1.5rem;
-}
-#section2 {
-  background-color: #ffb81c;
-}
-a {
-  text-decoration: none;
-}
-.ketchup1 {
-  position: absolute;
-  width: 47.2%;
-  margin-left: 50vw;
-}
-.bottle2 {
-  position: relative;
-  width: 35%;
-  margin-left: 56vw;
-}
-#section3 {
-  background-color: #302c2c;
-}
-.ketchup2 {
-  width: 65%;
-  margin-left: -20vw;
-}
 #text3 {
   display: flex;
   justify-content: center;
@@ -122,46 +123,11 @@ a {
   margin-left: 35vw;
   position: absolute;
 }
-.ketchup3 {
-  width: 100%;
-  margin-left: -5vw;
-  margin-top: -5vw;
-}
-.link1 {
-  color: white;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.link2 {
-  color: #302c2c;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.link2:hover,
-.link1:hover {
-  color: #a01f19;
-  font-size: 1.4rem;
-}
-#section4 {
-  background-color: #302c2c;
-}
 #text4 {
   position: absolute;
   margin-left: 10vw;
   float: left;
   margin-top: 10vw;
-}
-.ketchup4 {
-  width: 50%;
-  margin-left: 52vw;
-  margin-top: -10vw;
-}
-#hr_section4 {
-  opacity: 0;
-  margin-top: -10vw;
-}
-#section5 {
-  background-color: #ffb81c;
 }
 #text5 {
   position: absolute;
@@ -169,9 +135,6 @@ a {
   margin-left: 10vw;
   float: left;
   color: #302c2c;
-}
-h2 {
-  margin-bottom: 1.5vw;
 }
 #text6 {
   display: flex;
@@ -194,10 +157,60 @@ li:hover {
   color: #a01f19;
   font-weight: bold;
 }
+/*----------- Images ----------- */
+.bottle1 {
+  width: 35%;
+  margin-left: 10vw;
+  margin-top: -4vw;
+}
+.bottle2 {
+  position: relative;
+  width: 35%;
+  margin-left: 56vw;
+}
+.ketchup1 {
+  position: absolute;
+  width: 47.2%;
+  margin-left: 50vw;
+}
+.ketchup2 {
+  width: 65%;
+  margin-left: -20vw;
+}
+.ketchup3 {
+  width: 100%;
+  margin-left: -5vw;
+  margin-top: -5vw;
+}
+.ketchup4 {
+  width: 50%;
+  margin-left: 52vw;
+  margin-top: -10vw;
+}
 .sauces {
   width: 100%;
   margin-top: 15vw;
 }
+/*----------- Links ----------- */
+a {
+  text-decoration: none;
+}
+.link1 {
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.link2 {
+  color: #302c2c;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.link2:hover,
+.link1:hover {
+  color: #a01f19;
+  font-size: 1.4rem;
+}
+/*----------- Footer ----------- */
 footer {
   color: white;
   display: flex;
@@ -216,16 +229,4 @@ footer {
 }
 #wikipedia:hover {
   font-size: 1.2rem;
-}
-.title {
-  transition: 0.5s;
-  text-wrap: nowrap;
-}
-.title:hover {
-  font-size: 3rem;
-  text-wrap: nowrap;
-}
-b:hover {
-  font-size: 5rem;
-  text-wrap: nowrap;
 }
