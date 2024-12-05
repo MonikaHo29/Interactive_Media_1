@@ -11,6 +11,9 @@ html {
   font-weight: lighter;
   overflow-x: hidden;
 }
+body{
+  overflow-x: hidden;
+}
 header {
   background-color: #a01f19;
   display: flex;
@@ -18,24 +21,28 @@ header {
   align-items: center;
   height: 15vh;
   padding-top: 2vw;
+  width: 100%;
 }
 /*---------- Navigation Bar ----------*/
-nav ul {
+.nav1 .menu1 {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 8vw;
 }
-nav a {
+.nav1 a {
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
-nav a:hover {
+.nav1 a:hover {
   color: #ffb81c;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.nav2{
+  display: none;
 }
 #ketchup {
   font-family: "Denk One", sans-serif;
@@ -236,8 +243,9 @@ footer {
 @media screen and (max-width: 1300px) {
   html {
     font-size: 18px;
+    overflow-x: hidden;
   }
-  nav a {
+  .nav1 a {
     font-size: 1.5rem;
   }
   #ketchup {
@@ -264,13 +272,22 @@ footer {
     margin-left: -18vw;
   }
   .ketchup3 {
-    width: 90%;
-    margin-left: 10vw;
-    margin-top: 5vw;
+    position: absolute;
+    width: 80%;
+    margin-left: 30vw;
+    margin-top: 1vw;
   }
   .ketchup4 {
     width: 45%;
-    margin-top: 2vw;
+    margin-top: -10vw;
+  }
+  #text4{
+    margin-top: 1vw;
+  }
+  #hr_section4 {
+    opacity: 0;
+    margin-top: -1vw;
+    padding-top: 5vw;
   }
   .sauces {
     width: 90%;
@@ -279,5 +296,273 @@ footer {
   }
   footer {
     padding-top: 3vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html{
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  header{
+    height: 18vh;
+  }
+  #text2 {
+    margin-top: 10vw;
+  }
+}
+@media screen and (max-width: 1100px){
+  html{
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+  p{
+    width: 40vw;
+  }
+  .sauces {
+    margin-top: 18vw;
+  }
+  footer{
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 901px){
+  html{
+    font-size: 12px;
+    overflow-x: hidden;
+  }
+  header{
+    height: 12vh;
+  }
+  p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  footer{
+    height: 18vh;
+  }
+}
+@media screen and (max-width: 851px){
+  html{
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 581px){
+  html{
+    font-size: 8px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 451px){
+  html{
+    font-size: 6px;
+    overflow-x: hidden;
+  }
+  header{
+    height: 70vh;
+  }
+  .nav2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav2 a{
+    color: white;
+    font-size: 4rem;
+    line-height: 10vw;
+  }
+  #ketchup2{
+    color: white;
+    font-family: "Denk One", sans-serif;
+    font-size: 10rem;
+  }
+  .nav1{
+    display: none;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottle1{
+    width: 70%;
+    margin-left: 2vw;
+  }
+  .title{
+    margin-left: -28vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+  #text1 b{
+    margin-bottom: -4vw;
+  }
+  b{
+    margin-top: 10vw;
+    font-size: 10rem;
+    margin-left: 18vw;
+  }
+  h1{
+    text-align: center;
+    font-size: 4.5em;
+  }
+  p{
+    margin-left: -28vw;
+    width: 80vw;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 15vw;
+  }
+  #text1{
+    text-align: center;
+  }
+  .ketchup1{
+    width: 86.5%;
+    margin-left: 1vw;
+    margin-top: 0.2vw;
+    opacity: 32%;
+  }
+  .bottle2{
+    width: 68%;
+    margin-left: 5vw;
+    margin-top: -102vw;
+    opacity: 32%;
+  }
+  .bottle2:hover{
+    opacity: 100%;
+  }
+  #text2{
+    position: relative;
+    margin-top: 15vw;
+    z-index: 1;
+  }
+  #text3 b{
+    margin-left: -5vw;
+    margin-top: 10vw;
+  }
+  #text3 p{
+    width: 85vw;
+    margin-left: -35vw;
+  }
+  #text3{
+    position: absolute;
+    z-index: 1;
+    margin-top: -18vw;
+    text-align: center;
+    align-items: center;
+  }
+  .ketchup2{
+    position: relative;
+    width: 100%;
+    margin-left: -70vw;
+    opacity: 30%;
+  }
+  .ketchup3{
+    position: relative;
+    width: 120%;
+    margin-left: 60vw;
+    margin-top: -60vw;
+    opacity: 30%;
+  }
+  #text4 b{
+    margin-left: -1vw;
+    margin-bottom: -10vw;
+  }
+  #text4{
+    margin-top: -30vw;
+    position: absolute;
+    z-index: 1;
+  }
+  .ketchup4{
+    width: 80%;
+    margin-left: -70vw;
+    margin-top: -30vw;
+    transform: scaleX(-1);
+    opacity: 30%;
+  }
+  #section5{
+    display: flex;
+    flex-direction: column;
+  }
+  #text5{
+    position: relative;
+    margin-top: 20vw;
+  }
+  #text6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    line-height: 2vw;
+  }
+  #text6 h2{
+    font-size: 4em;
+    text-wrap: nowrap;
+    margin-left: -60vw;
+    margin-top: 60vw;
+    line-height: 6rem;
+  }
+  #text6 ul{
+    margin-left: -60vw;
+    margin-top: 2vw;
+  }
+  #text6 li{
+    font-size: 3rem;
+    text-wrap: nowrap;
+    line-height: 5rem;
+  }
+  .sauces{
+    width: 100%;
+    margin-top: 50vw;
+    margin-left: 0vw;
+  }
+  #ketchup_footer{
+    color: white;
+    font-family: "Denk One", sans-serif;
+    font-size: 6rem;
+    margin-left: 5vw;
+  }
+  footer {
+    color: white;
+    height: 30vw;
+    font-size: 4rem;
+    padding-top: 20vw;
+  }
+  footer p{
+    margin-left: 5vw;
+  }
+  #wikipedia {
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  #wikipedia:hover {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 321px){
+  html{
+    font-size: 4px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 251px){
+  html{
+    font-size: 3px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 151px){
+  html{
+    font-size: 2px;
+    overflow-x: hidden;
   }
 }
