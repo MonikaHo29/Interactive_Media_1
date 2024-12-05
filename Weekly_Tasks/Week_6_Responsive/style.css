@@ -54,10 +54,12 @@ nav a:hover {
 #section1 {
   background-color: #a01f19;
 }
-#section2, #section5 {
+#section2,
+#section5 {
   background-color: #ffb81c;
 }
-#section3, #section4 {
+#section3,
+#section4 {
   background-color: #302c2c;
 }
 #hr_section4 {
@@ -86,9 +88,6 @@ b {
 b:hover {
   font-size: 5rem;
   text-wrap: nowrap;
-}
-h2 {
-  margin-bottom: 1.5vw;
 }
 /*----------- Text ----------- */
 p {
@@ -149,6 +148,9 @@ p {
   font-weight: lighter;
   line-height: 2vw;
   text-transform: uppercase;
+}
+h2 {
+  margin-bottom: 1.5vw;
 }
 li {
   list-style-type: none;
@@ -229,4 +231,53 @@ footer {
 }
 #wikipedia:hover {
   font-size: 1.2rem;
+}
+/*----------- Media Queries ----------- */
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 18px;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  #ketchup {
+    font-size: 3.5rem;
+  }
+  .text {
+    font-size: 1.3rem;
+  }
+  p {
+    line-height: 1.8rem;
+    font-weight: lighter;
+    width: 38vw;
+  }
+  h2 {
+    line-height: 3vw;
+    font-size: 1.5rem;
+  }
+  li {
+    line-height: 2.2vw;
+    font-size: 1rem;
+  }
+  .ketchup2 {
+    width: 55%;
+    margin-left: -18vw;
+  }
+  .ketchup3 {
+    width: 90%;
+    margin-left: 10vw;
+    margin-top: 5vw;
+  }
+  .ketchup4 {
+    width: 45%;
+    margin-top: 2vw;
+  }
+  .sauces {
+    width: 90%;
+    margin-top: 25vw;
+    margin-left: 5vw;
+  }
+  footer {
+    padding-top: 3vw;
+  }
 }
