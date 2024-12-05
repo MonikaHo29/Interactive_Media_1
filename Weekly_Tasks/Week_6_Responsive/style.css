@@ -187,14 +187,15 @@ li:hover {
   margin-left: -20vw;
 }
 .ketchup3 {
-  width: 100%;
-  margin-left: -5vw;
-  margin-top: -5vw;
+  width: 60%;
+  height: 60%;
+  margin-left: 10vw;
+  margin-top: 2vw;
 }
 .ketchup4 {
-  width: 50%;
-  margin-left: 52vw;
-  margin-top: -10vw;
+  width: 42%;
+  margin-left: 60vw;
+  margin-top: -5vw;
 }
 .sauces {
   width: 100%;
@@ -231,6 +232,11 @@ footer {
   height: 12vw;
   gap: 1vw;
 }
+#ketchup_footer {
+  font-family: "Denk One", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
 #wikipedia {
   color: white;
   font-weight: bold;
@@ -239,18 +245,28 @@ footer {
 #wikipedia:hover {
   font-size: 1.2rem;
 }
+
+
 /*----------- Media Queries ----------- */
 @media screen and (max-width: 1300px) {
   html {
     font-size: 18px;
     overflow-x: hidden;
   }
+  /*----------- Flex Container/Sections ----------- */
+  #hr_section4 {
+    opacity: 0;
+    margin-top: -1vw;
+    padding-top: 5vw;
+  }
+  /*----------- Navigation Bar ----------- */
   .nav1 a {
     font-size: 1.5rem;
   }
   #ketchup {
     font-size: 3.5rem;
   }
+  /*----------- Text ----------- */
   .text {
     font-size: 1.3rem;
   }
@@ -258,6 +274,15 @@ footer {
     line-height: 1.8rem;
     font-weight: lighter;
     width: 38vw;
+  }
+  #text2{
+    margin-top: 10vw;
+  }
+  #text4{
+    margin-top: 10vw;
+  }
+  #text5{
+    margin-top: 10vw;
   }
   h2 {
     line-height: 3vw;
@@ -267,38 +292,33 @@ footer {
     line-height: 2.2vw;
     font-size: 1rem;
   }
+  /*----------- Images ----------- */
   .ketchup2 {
     width: 55%;
     margin-left: -18vw;
   }
   .ketchup3 {
     position: absolute;
-    width: 80%;
-    margin-left: 30vw;
-    margin-top: 1vw;
+    width: 45%;
+    height: 50%;
+    margin-left: 55vw;
+    margin-top: 20vw;
   }
   .ketchup4 {
-    width: 45%;
+    width: 50%;
     margin-top: -10vw;
-  }
-  #text4{
-    margin-top: 1vw;
-  }
-  #hr_section4 {
-    opacity: 0;
-    margin-top: -1vw;
-    padding-top: 5vw;
+    margin-left: 60vw;
   }
   .sauces {
     width: 90%;
-    margin-top: 25vw;
+    margin-top: 30vw;
     margin-left: 5vw;
   }
+  /*----------- Footer ----------- */
   footer {
     padding-top: 3vw;
   }
 }
-
 @media screen and (max-width: 1200px) {
   html{
     font-size: 16px;
@@ -307,8 +327,9 @@ footer {
   header{
     height: 18vh;
   }
+  /*----------- Text ----------- */
   #text2 {
-    margin-top: 10vw;
+    margin-top: 12vw;
   }
 }
 @media screen and (max-width: 1100px){
@@ -316,12 +337,29 @@ footer {
     font-size: 14px;
     overflow-x: hidden;
   }
+  /*----------- Text ----------- */
   p{
     width: 40vw;
   }
-  .sauces {
-    margin-top: 18vw;
+  #text2 {
+    margin-top: 12vw;
   }
+  /*----------- Images ----------- */
+  .ketchup3 {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin-left: 60vw;
+    margin-top: 20vw;
+  }
+  .ketchup4 {
+    width: 45%;
+    margin-left: 65vw;
+  }
+  .sauces {
+    margin-top: 25vw;
+  }
+  /*----------- Footer ----------- */
   footer{
     height: 20vh;
   }
@@ -334,10 +372,23 @@ footer {
   header{
     height: 12vh;
   }
+  /*----------- Text ----------- */
   p{
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
+  #text2 {
+    margin-top: 13vw;
+  }
+  /*----------- Images ----------- */
+  .ketchup3 {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    margin-left: 55vw;
+    margin-top: 15vw;
+  }
+  /*----------- Footer ----------- */
   footer{
     height: 18vh;
   }
@@ -347,11 +398,45 @@ footer {
     font-size: 10px;
     overflow-x: hidden;
   }
+  /*----------- Images ----------- */
+  .ketchup3 {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin-left: 60vw;
+    margin-top: 15vw;
+  }
+  .ketchup4 {
+    width: 40%;
+    margin-left: 65vw;
+  }
+  .sauces {
+    margin-top: 20vw;
+  }
+  /*----------- Footer ----------- */
+  footer{
+    height: 14vh;
+  }
 }
 @media screen and (max-width: 581px){
   html{
     font-size: 8px;
     overflow-x: hidden;
+  }
+  /*----------- Images ----------- */
+  .ketchup3 {
+    position: absolute;
+    width: 40%;
+    height: 28%;
+    margin-left: 60vw;
+    margin-top: 15vw;
+  }
+  .sauces {
+    margin-top: 25vw;
+  }
+  /*----------- Footer ----------- */
+  footer{
+    height: 12vh;
   }
 }
 @media screen and (max-width: 451px){
@@ -360,7 +445,27 @@ footer {
     overflow-x: hidden;
   }
   header{
-    height: 70vh;
+    height: 50vh;
+  }
+  /*----------- Flex Container/Sections ----------- */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #section5{
+    display: flex;
+    flex-direction: column;
+  }
+  #hr_section4{
+    opacity: 0;
+    margin-top: -5vw;
+  }
+  /*----------- Navigation Bar ----------- */
+  .nav1{
+    display: none;
   }
   .nav2{
     color: white;
@@ -371,27 +476,13 @@ footer {
   .nav2 a{
     color: white;
     font-size: 4rem;
-    line-height: 10vw;
+    line-height: 12vw;
   }
-  #ketchup2{
-    color: white;
-    font-family: "Denk One", sans-serif;
-    font-size: 10rem;
+  .nav2 a:hover{
+    color: #ffb81c;
+    font-size: 4.5rem;
   }
-  .nav1{
-    display: none;
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    text-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .bottle1{
-    width: 70%;
-    margin-left: 2vw;
-  }
+  /*----------- Title ----------- */
   .title{
     margin-left: -28vw;
     display: flex;
@@ -405,12 +496,13 @@ footer {
   b{
     margin-top: 10vw;
     font-size: 10rem;
-    margin-left: 18vw;
+    margin-left: 15vw;
   }
   h1{
     text-align: center;
     font-size: 4.5em;
   }
+  /*----------- Text ----------- */
   p{
     margin-left: -28vw;
     width: 80vw;
@@ -420,21 +512,6 @@ footer {
   }
   #text1{
     text-align: center;
-  }
-  .ketchup1{
-    width: 86.5%;
-    margin-left: 1vw;
-    margin-top: 0.2vw;
-    opacity: 32%;
-  }
-  .bottle2{
-    width: 68%;
-    margin-left: 5vw;
-    margin-top: -102vw;
-    opacity: 32%;
-  }
-  .bottle2:hover{
-    opacity: 100%;
   }
   #text2{
     position: relative;
@@ -451,23 +528,10 @@ footer {
   }
   #text3{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     margin-top: -18vw;
     text-align: center;
     align-items: center;
-  }
-  .ketchup2{
-    position: relative;
-    width: 100%;
-    margin-left: -70vw;
-    opacity: 30%;
-  }
-  .ketchup3{
-    position: relative;
-    width: 120%;
-    margin-left: 60vw;
-    margin-top: -60vw;
-    opacity: 30%;
   }
   #text4 b{
     margin-left: -1vw;
@@ -477,17 +541,6 @@ footer {
     margin-top: -30vw;
     position: absolute;
     z-index: 1;
-  }
-  .ketchup4{
-    width: 80%;
-    margin-left: -70vw;
-    margin-top: -30vw;
-    transform: scaleX(-1);
-    opacity: 30%;
-  }
-  #section5{
-    display: flex;
-    flex-direction: column;
   }
   #text5{
     position: relative;
@@ -519,17 +572,49 @@ footer {
     text-wrap: nowrap;
     line-height: 5rem;
   }
+  /*----------- Images ----------- */
+  .bottle1{
+    width: 70%;
+    margin-left: 2vw;
+  }
+  .bottle2{
+    width: 68%;
+    margin-left: 5vw;
+    margin-top: -102vw;
+    opacity: 32%;
+  }
+  .ketchup1{
+    width: 86.5%;
+    margin-left: 1vw;
+    margin-top: 0.2vw;
+    opacity: 32%;
+  }
+  .ketchup2{
+    position: relative;
+    width: 100%;
+    margin-left: -70vw;
+    opacity: 30%;
+  }
+  .ketchup3{
+    position: relative;
+    width: 100%;
+    margin-left: 60vw;
+    margin-top: -60vw;
+    opacity: 30%;
+  }
+  .ketchup4{
+    width: 80%;
+    margin-left: -70vw;
+    margin-top: -30vw;
+    transform: scaleX(-1);
+    opacity: 30%;
+  }
   .sauces{
     width: 100%;
     margin-top: 50vw;
     margin-left: 0vw;
   }
-  #ketchup_footer{
-    color: white;
-    font-family: "Denk One", sans-serif;
-    font-size: 6rem;
-    margin-left: 5vw;
-  }
+  /*----------- Footer ----------- */
   footer {
     color: white;
     height: 30vw;
@@ -539,13 +624,21 @@ footer {
   footer p{
     margin-left: 5vw;
   }
+  #ketchup2{
+    color: white;
+    font-family: "Denk One", sans-serif;
+    font-size: 10rem;
+  }
+  #ketchup_footer{
+    color: white;
+    font-family: "Denk One", sans-serif;
+    font-size: 6rem;
+    margin-left: 5vw;
+  }
   #wikipedia {
     color: white;
     font-weight: bold;
     transition: 0.5s;
-  }
-  #wikipedia:hover {
-    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 321px){
@@ -553,16 +646,56 @@ footer {
     font-size: 4px;
     overflow-x: hidden;
   }
+  header{
+    height: 90vw;
+  }
+  /*----------- Images ----------- */
+  .ketchup1{
+    width: 83%;
+  }
+  .ketchup3{
+    width: 80%;
+  }
+  .ketchup4{
+    width: 70%;
+    margin-top: 10vw;
+  }
 }
 @media screen and (max-width: 251px){
   html{
     font-size: 3px;
     overflow-x: hidden;
   }
+  header{
+    height: 80vw;
+  }
+  /*----------- Images ----------- */
+  .bottle2{
+    width: 65%;
+    margin-left: 5vw;
+    margin-top: -90vw;
+    opacity: 32%;
+  }
+  .ketchup1{
+    width: 88%;
+  }
 }
 @media screen and (max-width: 151px){
   html{
     font-size: 2px;
     overflow-x: hidden;
+  }
+  header{
+    height: 75vw;
+  }
+  /*----------- Images ----------- */
+  .bottle2{
+    width: 62%;
+    margin-left: 5vw;
+    margin-top: -90vw;
+    opacity: 32%;
+  }
+  .ketchup1{
+    width: 90%;
   }
 }
