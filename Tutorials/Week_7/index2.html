@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <h1 id="title">Welcome to my Site!</h1> 
+    <p id="content">This is my page</p>
+    <button id="button">Click me!</button> 
+    <script>
+        //Get the title element 
+        const title = document.getElementById('title'); // get element by id means it finds the element with the id 'title'
+        title.style.color = 'red'; // change the color of the title to red
+        title.textContent = 'Hello World!'; // change the text of the title to 'Hello World!'
+        //Get the content element
+        const content = document.getElementById('content');
+        content.style.color = 'blue'; // change the color of the content to blue
+        content.style.fontSize = '20px'; // change the font size of the content to 20px
+        // Add a click event listener to the button
+        const button = document.getElementById('button');
+        button.addEventListener('click', function() {
+            content.textContent = 'You clicked the button!'; // change the text of the content when you click the button
+        });
+    </script>  
+</body>
+</html>
