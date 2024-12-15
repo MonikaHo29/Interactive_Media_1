@@ -74,7 +74,6 @@ deleteButton.className = 'delete';
 deleteButton.style.width = "4vw";
 deleteButton.style.height = "4.5vh";
 
-
 taskElement.appendChild(deleteButton);  // add the delete button to the list when a task is added
 
 taskList.appendChild(taskElement);  // add the task to the list when a task is added
@@ -91,5 +90,3 @@ taskList.addEventListener('click', function(event) {
     }
  
 });
-
-
