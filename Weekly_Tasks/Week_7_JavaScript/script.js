@@ -16,6 +16,7 @@ const myHeading = document.querySelector("h1");
 myHeading.textContent = "John's To-Do List";
 myHeading.style.color = "darkblue";
 myHeading.style.fontSize = "3em";
+
 myHeading.addEventListener("click", function(){
     alert("You clicked the heading!");
     myHeading.style.color = "white";
