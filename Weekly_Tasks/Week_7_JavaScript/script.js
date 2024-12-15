@@ -56,6 +56,7 @@ function addTask(text) {
     taskElement.textContent = text; // add text to the list
     taskElement.style.fontSize = "1.2em";
     taskElement.style.marginTop = "2vh";
+    taskElement.style.listStyleType = "none";
 // ————————————————————————————————————————————————————————————
 // 4.
 // create event handler to handle buttons

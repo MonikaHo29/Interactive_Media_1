@@ -1,17 +1,17 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    font-family: sans-serif;
-    text-align: center;
-  }
+  height: 100%;
+  width: 100%;
+}
 
-  /* IMPORTANT */
-  .completed {
-    text-decoration: line-through;
-  }
-  button {
-    margin-left: 5px;
-  }
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* IMPORTANT */
+.completed {
+  text-decoration: line-through;
+}
+button {
+  margin-left: 5px;
+}
