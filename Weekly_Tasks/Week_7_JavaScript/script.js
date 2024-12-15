@@ -56,6 +56,7 @@ function addTask(text) {
     const taskElement = document.createElement('li'); 
     taskElement.textContent = text; // add text to the list
     taskElement.style.fontSize = "1.2em";
+    taskElement.style.marginTop = "2vh";
 // ————————————————————————————————————————————————————————————
 // 4.
 // create event handler to handle buttons
@@ -67,6 +68,7 @@ doneButton.className = 'done';
 taskElement.appendChild(doneButton);
 doneButton.style.width = "4vw";
 doneButton.style.height = "4.5vh";
+doneButton.style.marginLeft = "1vw";
 
 /*create a button to delete the task*/
 let deleteButton = document.createElement('button');
