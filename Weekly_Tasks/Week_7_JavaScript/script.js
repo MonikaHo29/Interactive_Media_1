@@ -26,7 +26,6 @@ myHeading.addEventListener("click", function(){
 const heading3 = document.querySelector('h3');
 heading3.textContent = "Input";
 heading3.style.fontSize = "1.5em";
-
 // ————————————————————————————————————————————————————————————
 // 2.
 // create event listener to add item to the list
