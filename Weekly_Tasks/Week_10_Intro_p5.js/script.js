@@ -49,43 +49,42 @@ function draw() {
    triangle(-50, -50, 50, -50, 0, 50); 
    pop();
 
-
    // more triangle will be shown after key press
    if (showSecondTriangle) {
-       // triangle within the second rectangle
-       push();
-       translate(430, 210);  
-       rotate(triangleAngle3); 
-       fill(61, 179, 167);  
-       triangle(-50, -50, 50, -50, 0, 50); 
-       pop();
+        // triangle within the second rectangle
+        push();
+        translate(430, 210);  
+        rotate(triangleAngle3); 
+        fill(61, 179, 167);  
+        triangle(-50, -50, 50, -50, 0, 50); 
+        pop();
 
-       // triangle within the eighth rectangle
-       push();
-       translate(430, 650);  
-       rotate(triangleAngle4);
-       fill(214, 120, 62); 
-       triangle(-50, -50, 50, -50, 0, 50); 
-       pop();
+        // triangle within the eighth rectangle
+        push();
+        translate(430, 650);  
+        rotate(triangleAngle4);
+        fill(214, 120, 62); 
+        triangle(-50, -50, 50, -50, 0, 50); 
+        pop();
    }
 
    if (showThirdTriangle) {
-    // triangle within the fourth rectangle
-    push();
-    translate(210, 430); 
-    rotate(triangleAngle5);
-    fill(214, 120, 62); 
-    triangle(-50, -50, 50, -50, 0, 50); 
-    pop();
+        // triangle within the fourth rectangle
+        push();
+        translate(210, 430); 
+        rotate(triangleAngle5);
+        fill(214, 120, 62); 
+        triangle(-50, -50, 50, -50, 0, 50); 
+        pop();
 
-    // triangle within the sixth rectangle
-    push();
-    translate(650, 430); 
-    rotate(triangleAngle6);
-    fill(61, 179, 167);
-    triangle(-50, -50, 50, -50, 0, 50);
-    pop();
-}
+        // triangle within the sixth rectangle
+        push();
+        translate(650, 430); 
+        rotate(triangleAngle6);
+        fill(61, 179, 167);
+        triangle(-50, -50, 50, -50, 0, 50);
+        pop();
+   }
 
     //if showArc is true, draw the arc
     if (showArc) {
