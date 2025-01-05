@@ -1,7 +1,6 @@
-//INTERACTION
+// INTERACTION
 // mouse input
 // key input (space and arrow keys right & left)
-
 
 // VARIABLES
 let arcColor;
@@ -16,98 +15,101 @@ let showSecondTriangle = false;
 let showThirdTriangle = false;
 let keyPressCount = 0;
 
-// create canvas
+// create CANVAS
 function setup() {
-    createCanvas(860, 860);
-    background(220);
+    createCanvas(600, 600); // Adjusted canvas size to fit tightly
+    background(255); 
     arcColor = color(255, 255, 0); // Primary color of the arc (yellow)
 }
 
 // draw function with all geometries
 function draw() {
-    // retrangle background with different colors
-    noStroke();
-    fill(255, 161, 161); rect(100, 100, 220, 220);
-    fill(161, 255, 246); rect(320, 100, 220, 220);
-    fill(255, 197, 161); rect(540, 100, 220, 220);
-    fill(255, 197, 161); rect(100, 320, 220, 220);
-    fill(255, 161, 161); rect(320, 320, 220, 220);
-    fill(161, 255, 246); rect(540, 320, 220, 220);
-    fill(161, 255, 246); rect(100, 540, 220, 220);
-    fill(255, 197, 161); rect(320, 540, 220, 220);
-    fill(255, 161, 161); rect(540, 540, 220, 220);
+    // Size for rectangles
+    let rectSize = width / 3;
 
-    // first triangle within the first rectangle
+    // Rectangle background 
+    noStroke();
+    fill(255, 161, 161); rect(0, 0, rectSize, rectSize);
+    fill(161, 255, 246); rect(rectSize, 0, rectSize, rectSize);
+    fill(255, 197, 161); rect(2 * rectSize, 0, rectSize, rectSize);
+    fill(255, 197, 161); rect(0, rectSize, rectSize, rectSize);
+    fill(255, 161, 161); rect(rectSize, rectSize, rectSize, rectSize);
+    fill(161, 255, 246); rect(2 * rectSize, rectSize, rectSize, rectSize);
+    fill(161, 255, 246); rect(0, 2 * rectSize, rectSize, rectSize);
+    fill(255, 197, 161); rect(rectSize, 2 * rectSize, rectSize, rectSize);
+    fill(255, 161, 161); rect(2 * rectSize, 2 * rectSize, rectSize, rectSize);
+
+    // First triangle in the first rectangle
     push();
-    translate(210, 210);  // position triangle in center of rectangle
-    rotate(triangleAngle1); // rotate triangle
-    fill(196, 98, 98);  // color
-    triangle(-50, -50, 50, -50, 0, 50); // draw triangle
+    translate(rectSize / 2, rectSize / 2); // Centered in the first rectangle
+    rotate(triangleAngle1); // Rotate triangle
+    fill(196, 98, 98); // Color
+    triangle(-40, -40, 40, -40, 0, 40); // Draw triangle
     pop();
 
-    // second triangle within the last rectangle
+    // Second triangle in the last rectangle
     push();
-    translate(650, 650);
+    translate(2.5 * rectSize, 2.5 * rectSize);
     rotate(triangleAngle2);
     fill(196, 98, 98);
-    triangle(-50, -50, 50, -50, 0, 50);
+    triangle(-40, -40, 40, -40, 0, 40);
     pop();
 
-    // more triangle will be shown after key press
+    // Additional triangles shown after key presses
     if (showSecondTriangle) {
-        // triangle within the second rectangle
+        // Triangle in the second rectangle
         push();
-        translate(430, 210);
+        translate(1.5 * rectSize, rectSize / 2);
         rotate(triangleAngle3);
         fill(61, 179, 167);
-        triangle(-50, -50, 50, -50, 0, 50);
+        triangle(-40, -40, 40, -40, 0, 40);
         pop();
 
-        // triangle within the eighth rectangle
+        // Triangle in the eighth rectangle
         push();
-        translate(430, 650);
+        translate(1.5 * rectSize, 2.5 * rectSize);
         rotate(triangleAngle4);
         fill(214, 120, 62);
-        triangle(-50, -50, 50, -50, 0, 50);
+        triangle(-40, -40, 40, -40, 0, 40);
         pop();
     }
 
     if (showThirdTriangle) {
-        // triangle within the fourth rectangle
+        // Triangle in the fourth rectangle
         push();
-        translate(210, 430);
+        translate(rectSize / 2, 1.5 * rectSize);
         rotate(triangleAngle5);
         fill(214, 120, 62);
-        triangle(-50, -50, 50, -50, 0, 50);
+        triangle(-40, -40, 40, -40, 0, 40);
         pop();
 
-        // triangle within the sixth rectangle
+        // Triangle in the sixth rectangle
         push();
-        translate(650, 430);
+        translate(2.5 * rectSize, 1.5 * rectSize);
         rotate(triangleAngle6);
         fill(61, 179, 167);
-        triangle(-50, -50, 50, -50, 0, 50);
+        triangle(-40, -40, 40, -40, 0, 40);
         pop();
     }
 
-    // if showArc is true, draw the arc
+    // If showArc is true, draw the arcs
     if (showArc) {
         noStroke();
-        fill(arcColor); // use the color defined in the setup function
-        // calculate the start and end angles for the arc
+        fill(arcColor); // Use the color defined in the setup function
+        // Calculate the start and end angles for the arc
         let biteSize = PI / 16;
         let startAngle = biteSize * sin(frameCount * 0.1) + biteSize;
         let endAngle = TWO_PI - startAngle;
 
-        // draw the arcs
-        arc(650, 210, 200, 200, startAngle, endAngle, PIE);
-        arc(430, 430, 200, 200, startAngle, endAngle, PIE);
-        arc(210, 650, 200, 200, startAngle, endAngle, PIE);
+        // Draw the arcs
+        arc(2.5 * rectSize, rectSize / 2, 180, 180, startAngle, endAngle, PIE);
+        arc(1.5 * rectSize, 1.5 * rectSize, 180, 180, startAngle, endAngle, PIE);
+        arc(rectSize / 2, 2.5 * rectSize, 180, 180, startAngle, endAngle, PIE);
     }
 }
 
 function mousePressed() {
-    // triangles will rotate with 15 degrees
+    // Triangles will rotate with 15 degrees
     triangleAngle1 += radians(15);
     triangleAngle2 += radians(15);
     triangleAngle3 += radians(15);
@@ -115,23 +117,23 @@ function mousePressed() {
     triangleAngle5 += radians(15);
     triangleAngle6 += radians(15);
 
-    // change the color of the arc to a random color
+    // Change the color of the arc to a random color
     arcColor = color(random(255), random(255), random(255));
 }
 
 function keyPressed() {
     // Show/hide arcs
     if (key === ' ') {
-        showArc = !showArc; // toggle the value of showArc
+        showArc = !showArc; // Toggle the value of showArc
     }
 
-    keyPressCount++; // increment the keyPressCount variable
+    keyPressCount++; // Increment the keyPressCount variable
 
     if (keyPressCount === 1) {
-        // show the triangles in the second and eighth rectangle after 1 key press
+        // Show the triangles in the second and eighth rectangle after 1 key press
         showSecondTriangle = true;
     } else if (keyPressCount === 3) {
-        // show the triangles in the fourth and sixth rectangle after 3 key presses
+        // Show the triangles in the fourth and sixth rectangle after 3 key presses
         showThirdTriangle = true;
     }
 
