@@ -15,14 +15,14 @@ let showSecondTriangle = false;
 let showThirdTriangle = false;
 let keyPressCount = 0;
 
-// create CANVAS
+// Create CANVAS
 function setup() {
     createCanvas(600, 600); // Adjusted canvas size to fit tightly
     background(255); 
     arcColor = color(255, 255, 0); // Primary color of the arc (yellow)
 }
 
-// draw function with all geometries
+// Draw function with all geometries
 function draw() {
     // Size for rectangles
     let rectSize = width / 3;
