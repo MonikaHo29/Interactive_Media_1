@@ -18,6 +18,11 @@ let isChangingText = false; // Flag to control text change
 function setup() {
   createCanvas(1500, 800);
   background(0);
+  textFont('Protest Revolution');
+  textSize(48);
+  fill(255);
+  textAlign(CENTER, CENTER);
+  text("Hallo Welt", width / 2, height / 2);
 }
 
 // DRAW FUNCTION WITH ANIMATION
