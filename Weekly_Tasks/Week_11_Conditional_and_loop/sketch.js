@@ -1,3 +1,7 @@
+/* INTERACTION */
+// Mouse pressed: Create a firework at the mouse position
+// Key pressed: Change the text 
+
 let fireworks = [];
 let textVisible = false; // Text is not visible by default
 let currentText = "Happy New Year 2025"; 
