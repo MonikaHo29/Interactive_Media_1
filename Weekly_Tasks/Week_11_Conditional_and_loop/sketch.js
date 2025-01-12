@@ -18,7 +18,7 @@ let isChangingText = false; // Flag to control text change
 function setup() {
   createCanvas(1500, 800);
   background(0);
-  textFont('Protest Revolution');
+  textFont('Protest Revolution'); // using Google fonts
   textSize(48);
   fill(255);
   textAlign(CENTER, CENTER);
